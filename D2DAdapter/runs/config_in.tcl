@@ -1,0 +1,10 @@
+set ::env(PDK) {sky130A}
+set ::env(PDKPATH) {/home/zerotoasic/asic_tools/pdk/sky130A}
+set ::env(STD_CELL_LIBRARY) {sky130_fd_sc_hd}
+set ::env(SCLPATH) {/home/zerotoasic/asic_tools/pdk/sky130A/sky130_fd_sc_hd}
+set ::env(DESIGN_DIR) {/openlane/designs/D2DAdapter}
+set ::env(DESIGN_NAME) {D2DAdapter}
+set ::env(VERILOG_FILES) {/openlane/designs/D2DAdapter/src/D2DAdapter.v}
+set ::env(CLOCK_PORT) {clk}
+set ::env(CLOCK_PERIOD) {10.0}
+set ::env(DESIGN_IS_CORE) {1}

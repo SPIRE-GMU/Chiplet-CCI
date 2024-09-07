@@ -1,0 +1,2508 @@
+library (D2DAdapter) {
+  comment                        : "";
+  delay_model                    : table_lookup;
+  simulation                     : false;
+  capacitive_load_unit (1,pF);
+  leakage_power_unit             : 1pW;
+  current_unit                   : "1A";
+  pulling_resistance_unit        : "1kohm";
+  time_unit                      : "1ns";
+  voltage_unit                   : "1v";
+  library_features(report_delay_calculation);
+
+  input_threshold_pct_rise : 50;
+  input_threshold_pct_fall : 50;
+  output_threshold_pct_rise : 50;
+  output_threshold_pct_fall : 50;
+  slew_lower_threshold_pct_rise : 20;
+  slew_lower_threshold_pct_fall : 20;
+  slew_upper_threshold_pct_rise : 80;
+  slew_upper_threshold_pct_fall : 80;
+  slew_derate_from_library : 1.0;
+
+
+  nom_process                    : 1.0;
+  nom_temperature                : 100.0;
+  nom_voltage                    : 1.60;
+
+  lu_table_template(template_1) {
+    variable_1 : total_output_net_capacitance;
+    index_1 ("0.00050,  0.00166,  0.00551,  0.01830,  0.06076,  0.20175,  0.66987");
+  }
+  lu_table_template(template_10) {
+    variable_1 : total_output_net_capacitance;
+    index_1 ("0.00050,  0.00166,  0.00551,  0.01830,  0.06076,  0.20175,  0.66987");
+  }
+  lu_table_template(template_11) {
+    variable_1 : total_output_net_capacitance;
+    index_1 ("0.00050,  0.00166,  0.00551,  0.01830,  0.06076,  0.20175,  0.66987");
+  }
+  lu_table_template(template_12) {
+    variable_1 : total_output_net_capacitance;
+    index_1 ("0.00050,  0.00166,  0.00551,  0.01830,  0.06076,  0.20175,  0.66987");
+  }
+  lu_table_template(template_13) {
+    variable_1 : total_output_net_capacitance;
+    index_1 ("0.00050,  0.00166,  0.00551,  0.01830,  0.06076,  0.20175,  0.66987");
+  }
+  lu_table_template(template_14) {
+    variable_1 : total_output_net_capacitance;
+    index_1 ("0.00050,  0.00166,  0.00551,  0.01830,  0.06076,  0.20175,  0.66987");
+  }
+  lu_table_template(template_15) {
+    variable_1 : total_output_net_capacitance;
+    index_1 ("0.00050,  0.00166,  0.00551,  0.01830,  0.06076,  0.20175,  0.66987");
+  }
+  lu_table_template(template_16) {
+    variable_1 : total_output_net_capacitance;
+    index_1 ("0.00050,  0.00166,  0.00551,  0.01830,  0.06076,  0.20175,  0.66987");
+  }
+  lu_table_template(template_2) {
+    variable_1 : total_output_net_capacitance;
+    index_1 ("0.00050,  0.00166,  0.00551,  0.01830,  0.06076,  0.20175,  0.66987");
+  }
+  lu_table_template(template_3) {
+    variable_1 : total_output_net_capacitance;
+    index_1 ("0.00050,  0.00166,  0.00551,  0.01830,  0.06076,  0.20175,  0.66987");
+  }
+  lu_table_template(template_4) {
+    variable_1 : total_output_net_capacitance;
+    index_1 ("0.00050,  0.00166,  0.00551,  0.01830,  0.06076,  0.20175,  0.66987");
+  }
+  lu_table_template(template_5) {
+    variable_1 : total_output_net_capacitance;
+    index_1 ("0.00050,  0.00166,  0.00551,  0.01830,  0.06076,  0.20175,  0.66987");
+  }
+  lu_table_template(template_6) {
+    variable_1 : total_output_net_capacitance;
+    index_1 ("0.00050,  0.00166,  0.00551,  0.01830,  0.06076,  0.20175,  0.66987");
+  }
+  lu_table_template(template_7) {
+    variable_1 : total_output_net_capacitance;
+    index_1 ("0.00050,  0.00166,  0.00551,  0.01830,  0.06076,  0.20175,  0.66987");
+  }
+  lu_table_template(template_8) {
+    variable_1 : total_output_net_capacitance;
+    index_1 ("0.00050,  0.00166,  0.00551,  0.01830,  0.06076,  0.20175,  0.66987");
+  }
+  lu_table_template(template_9) {
+    variable_1 : total_output_net_capacitance;
+    index_1 ("0.00050,  0.00166,  0.00551,  0.01830,  0.06076,  0.20175,  0.66987");
+  }
+  type ("io_fdi_lpConfig_bits") {
+    base_type : array;
+    data_type : bit;
+    bit_width : 32;
+    bit_from : 31;
+    bit_to : 0;
+  }
+  type ("io_fdi_lpData_bits") {
+    base_type : array;
+    data_type : bit;
+    bit_width : 64;
+    bit_from : 63;
+    bit_to : 0;
+  }
+  type ("io_fdi_lpDllp_bits") {
+    base_type : array;
+    data_type : bit;
+    bit_width : 8;
+    bit_from : 7;
+    bit_to : 0;
+  }
+  type ("io_fdi_lpStateReq") {
+    base_type : array;
+    data_type : bit;
+    bit_width : 4;
+    bit_from : 3;
+    bit_to : 0;
+  }
+  type ("io_fdi_lpStream_protoType") {
+    base_type : array;
+    data_type : bit;
+    bit_width : 3;
+    bit_from : 2;
+    bit_to : 0;
+  }
+  type ("io_fdi_plConfig_bits") {
+    base_type : array;
+    data_type : bit;
+    bit_width : 32;
+    bit_from : 31;
+    bit_to : 0;
+  }
+  type ("io_fdi_plData_bits") {
+    base_type : array;
+    data_type : bit;
+    bit_width : 64;
+    bit_from : 63;
+    bit_to : 0;
+  }
+  type ("io_fdi_plDllp_bits") {
+    base_type : array;
+    data_type : bit;
+    bit_width : 8;
+    bit_from : 7;
+    bit_to : 0;
+  }
+  type ("io_fdi_plLinkWidth") {
+    base_type : array;
+    data_type : bit;
+    bit_width : 3;
+    bit_from : 2;
+    bit_to : 0;
+  }
+  type ("io_fdi_plProtocol") {
+    base_type : array;
+    data_type : bit;
+    bit_width : 3;
+    bit_from : 2;
+    bit_to : 0;
+  }
+  type ("io_fdi_plProtocolFlitFormat") {
+    base_type : array;
+    data_type : bit;
+    bit_width : 3;
+    bit_from : 2;
+    bit_to : 0;
+  }
+  type ("io_fdi_plSpeedMode") {
+    base_type : array;
+    data_type : bit;
+    bit_width : 3;
+    bit_from : 2;
+    bit_to : 0;
+  }
+  type ("io_fdi_plStateStatus") {
+    base_type : array;
+    data_type : bit;
+    bit_width : 4;
+    bit_from : 3;
+    bit_to : 0;
+  }
+  type ("io_fdi_plStream_protoType") {
+    base_type : array;
+    data_type : bit;
+    bit_width : 3;
+    bit_from : 2;
+    bit_to : 0;
+  }
+  type ("io_rdi_lpConfig_bits") {
+    base_type : array;
+    data_type : bit;
+    bit_width : 32;
+    bit_from : 31;
+    bit_to : 0;
+  }
+  type ("io_rdi_lpData_bits") {
+    base_type : array;
+    data_type : bit;
+    bit_width : 64;
+    bit_from : 63;
+    bit_to : 0;
+  }
+  type ("io_rdi_lpStateReq") {
+    base_type : array;
+    data_type : bit;
+    bit_width : 4;
+    bit_from : 3;
+    bit_to : 0;
+  }
+  type ("io_rdi_plConfig_bits") {
+    base_type : array;
+    data_type : bit;
+    bit_width : 32;
+    bit_from : 31;
+    bit_to : 0;
+  }
+  type ("io_rdi_plData_bits") {
+    base_type : array;
+    data_type : bit;
+    bit_width : 64;
+    bit_from : 63;
+    bit_to : 0;
+  }
+  type ("io_rdi_plLinkWidth") {
+    base_type : array;
+    data_type : bit;
+    bit_width : 3;
+    bit_from : 2;
+    bit_to : 0;
+  }
+  type ("io_rdi_plSpeedMode") {
+    base_type : array;
+    data_type : bit;
+    bit_width : 3;
+    bit_from : 2;
+    bit_to : 0;
+  }
+  type ("io_rdi_plStateStatus") {
+    base_type : array;
+    data_type : bit;
+    bit_width : 4;
+    bit_from : 3;
+    bit_to : 0;
+  }
+
+  cell ("D2DAdapter") {
+    pin("clock") {
+      direction : input;
+      capacitance : 0.0117;
+    }
+    pin("io_fdi_lpClkAck") {
+      direction : input;
+      capacitance : 0.0000;
+    }
+    pin("io_fdi_lpConfigCredit") {
+      direction : output;
+      capacitance : 0.0334;
+      timing() {
+        related_pin : "io_fdi_lpRxActiveStatus";
+        timing_sense : negative_unate;
+        timing_type : combinational;
+	cell_rise(template_1) {
+          values("6.67049,6.68083,6.70766,6.77997,7.00521,7.74482,10.21754");
+	}
+	rise_transition(template_1) {
+          values("0.03042,0.03917,0.06659,0.15757,0.47276,1.52749,5.00194");
+	}
+	cell_fall(template_2) {
+          values("4.65122,4.66115,4.68518,4.73886,4.87464,5.29578,6.68857");
+	}
+	fall_transition(template_2) {
+          values("0.03256,0.03945,0.05710,0.10723,0.27063,0.84341,2.74201");
+	}
+      }
+    }
+    pin("io_fdi_lpConfig_valid") {
+      direction : input;
+      capacitance : 0.0074;
+    }
+    pin("io_fdi_lpCorruptCrc") {
+      direction : input;
+      capacitance : 0.0000;
+    }
+    pin("io_fdi_lpData_irdy") {
+      direction : input;
+      capacitance : 0.0032;
+    }
+    pin("io_fdi_lpData_ready") {
+      direction : output;
+      capacitance : 0.0334;
+      timing() {
+        related_pin : "io_rdi_lpData_ready";
+        timing_sense : positive_unate;
+        timing_type : combinational;
+	cell_rise(template_3) {
+          values("1.75788,1.76872,1.79672,1.86960,2.09529,2.83649,5.29317");
+	}
+	rise_transition(template_3) {
+          values("0.03465,0.04328,0.06982,0.15905,0.47288,1.52650,5.00601");
+	}
+	cell_fall(template_4) {
+          values("1.73551,1.74556,1.76975,1.82384,1.95982,2.38175,3.77779");
+	}
+	fall_transition(template_4) {
+          values("0.03347,0.04004,0.05779,0.10758,0.27073,0.84172,2.74783");
+	}
+      }
+    }
+    pin("io_fdi_lpData_valid") {
+      direction : input;
+      capacitance : 0.0109;
+    }
+    pin("io_fdi_lpDllpOfc") {
+      direction : input;
+      capacitance : 0.0000;
+    }
+    pin("io_fdi_lpDllp_valid") {
+      direction : input;
+      capacitance : 0.0000;
+    }
+    pin("io_fdi_lpLinkError") {
+      direction : input;
+      capacitance : 0.0038;
+    }
+    pin("io_fdi_lpRetimerCrd") {
+      direction : input;
+      capacitance : 0.0000;
+    }
+    pin("io_fdi_lpRxActiveStatus") {
+      direction : input;
+      capacitance : 0.0125;
+    }
+    pin("io_fdi_lpStallAck") {
+      direction : input;
+      capacitance : 0.0036;
+    }
+    pin("io_fdi_lpStream_protoStack") {
+      direction : input;
+      capacitance : 0.0000;
+    }
+    pin("io_fdi_lpWakeReq") {
+      direction : input;
+      capacitance : 0.0000;
+    }
+    pin("io_fdi_plCerror") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plClkReq") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plConfigCredit") {
+      direction : input;
+      capacitance : 0.0080;
+    }
+    pin("io_fdi_plConfig_valid") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_valid") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plDllpOfc") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plDllp_valid") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plError") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plFlitCancel") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plInbandPres") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plNfError") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plPhyInL1") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plPhyInL2") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plPhyInRecenter") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plProtocolValid") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plRetimerCrd") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plRxActiveReq") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plStallReq") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plStream_protoStack") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plTrainError") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plWakeAck") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpClkAck") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpConfigCredit") {
+      direction : input;
+      capacitance : 0.0083;
+    }
+    pin("io_rdi_lpConfig_valid") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_irdy") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_ready") {
+      direction : input;
+      capacitance : 0.0037;
+    }
+    pin("io_rdi_lpData_valid") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpLinkError") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpRetimerCrd") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpStallAck") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpWakeReq") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_plClkReq") {
+      direction : input;
+      capacitance : 0.0000;
+    }
+    pin("io_rdi_plConfigCredit") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_plConfig_valid") {
+      direction : input;
+      capacitance : 0.0087;
+    }
+    pin("io_rdi_plCorrectableError") {
+      direction : input;
+      capacitance : 0.0000;
+    }
+    pin("io_rdi_plData_valid") {
+      direction : input;
+      capacitance : 0.0089;
+    }
+    pin("io_rdi_plError") {
+      direction : input;
+      capacitance : 0.0000;
+    }
+    pin("io_rdi_plInbandPres") {
+      direction : input;
+      capacitance : 0.0089;
+    }
+    pin("io_rdi_plNonFatalError") {
+      direction : input;
+      capacitance : 0.0000;
+    }
+    pin("io_rdi_plPhyInRecenter") {
+      direction : input;
+      capacitance : 0.0000;
+    }
+    pin("io_rdi_plRetimerCrd") {
+      direction : input;
+      capacitance : 0.0000;
+    }
+    pin("io_rdi_plStallReq") {
+      direction : input;
+      capacitance : 0.0037;
+    }
+    pin("io_rdi_plTrainError") {
+      direction : input;
+      capacitance : 0.0000;
+    }
+    pin("io_rdi_plWakeAck") {
+      direction : input;
+      capacitance : 0.0000;
+    }
+    pin("reset") {
+      direction : input;
+      capacitance : 0.0031;
+    }
+    pin("VPWR") {
+      direction : input;
+      capacitance : 0.0000;
+    }
+    pin("VGND") {
+      direction : input;
+      capacitance : 0.0000;
+    }
+    bus("io_fdi_lpConfig_bits") {
+      bus_type : io_fdi_lpConfig_bits;
+      direction : input;
+      capacitance : 0.0000;
+    pin("io_fdi_lpConfig_bits[31]") {
+      direction : input;
+      capacitance : 0.0109;
+    }
+    pin("io_fdi_lpConfig_bits[30]") {
+      direction : input;
+      capacitance : 0.0100;
+    }
+    pin("io_fdi_lpConfig_bits[29]") {
+      direction : input;
+      capacitance : 0.0110;
+    }
+    pin("io_fdi_lpConfig_bits[28]") {
+      direction : input;
+      capacitance : 0.0110;
+    }
+    pin("io_fdi_lpConfig_bits[27]") {
+      direction : input;
+      capacitance : 0.0105;
+    }
+    pin("io_fdi_lpConfig_bits[26]") {
+      direction : input;
+      capacitance : 0.0103;
+    }
+    pin("io_fdi_lpConfig_bits[25]") {
+      direction : input;
+      capacitance : 0.0100;
+    }
+    pin("io_fdi_lpConfig_bits[24]") {
+      direction : input;
+      capacitance : 0.0106;
+    }
+    pin("io_fdi_lpConfig_bits[23]") {
+      direction : input;
+      capacitance : 0.0104;
+    }
+    pin("io_fdi_lpConfig_bits[22]") {
+      direction : input;
+      capacitance : 0.0111;
+    }
+    pin("io_fdi_lpConfig_bits[21]") {
+      direction : input;
+      capacitance : 0.0100;
+    }
+    pin("io_fdi_lpConfig_bits[20]") {
+      direction : input;
+      capacitance : 0.0115;
+    }
+    pin("io_fdi_lpConfig_bits[19]") {
+      direction : input;
+      capacitance : 0.0111;
+    }
+    pin("io_fdi_lpConfig_bits[18]") {
+      direction : input;
+      capacitance : 0.0106;
+    }
+    pin("io_fdi_lpConfig_bits[17]") {
+      direction : input;
+      capacitance : 0.0109;
+    }
+    pin("io_fdi_lpConfig_bits[16]") {
+      direction : input;
+      capacitance : 0.0103;
+    }
+    pin("io_fdi_lpConfig_bits[15]") {
+      direction : input;
+      capacitance : 0.0102;
+    }
+    pin("io_fdi_lpConfig_bits[14]") {
+      direction : input;
+      capacitance : 0.0105;
+    }
+    pin("io_fdi_lpConfig_bits[13]") {
+      direction : input;
+      capacitance : 0.0119;
+    }
+    pin("io_fdi_lpConfig_bits[12]") {
+      direction : input;
+      capacitance : 0.0104;
+    }
+    pin("io_fdi_lpConfig_bits[11]") {
+      direction : input;
+      capacitance : 0.0109;
+    }
+    pin("io_fdi_lpConfig_bits[10]") {
+      direction : input;
+      capacitance : 0.0102;
+    }
+    pin("io_fdi_lpConfig_bits[9]") {
+      direction : input;
+      capacitance : 0.0099;
+    }
+    pin("io_fdi_lpConfig_bits[8]") {
+      direction : input;
+      capacitance : 0.0105;
+    }
+    pin("io_fdi_lpConfig_bits[7]") {
+      direction : input;
+      capacitance : 0.0109;
+    }
+    pin("io_fdi_lpConfig_bits[6]") {
+      direction : input;
+      capacitance : 0.0108;
+    }
+    pin("io_fdi_lpConfig_bits[5]") {
+      direction : input;
+      capacitance : 0.0104;
+    }
+    pin("io_fdi_lpConfig_bits[4]") {
+      direction : input;
+      capacitance : 0.0108;
+    }
+    pin("io_fdi_lpConfig_bits[3]") {
+      direction : input;
+      capacitance : 0.0101;
+    }
+    pin("io_fdi_lpConfig_bits[2]") {
+      direction : input;
+      capacitance : 0.0113;
+    }
+    pin("io_fdi_lpConfig_bits[1]") {
+      direction : input;
+      capacitance : 0.0110;
+    }
+    pin("io_fdi_lpConfig_bits[0]") {
+      direction : input;
+      capacitance : 0.0109;
+    }
+    }
+    bus("io_fdi_lpData_bits") {
+      bus_type : io_fdi_lpData_bits;
+      direction : input;
+      capacitance : 0.0000;
+    pin("io_fdi_lpData_bits[63]") {
+      direction : input;
+      capacitance : 0.0059;
+    }
+    pin("io_fdi_lpData_bits[62]") {
+      direction : input;
+      capacitance : 0.0059;
+    }
+    pin("io_fdi_lpData_bits[61]") {
+      direction : input;
+      capacitance : 0.0098;
+    }
+    pin("io_fdi_lpData_bits[60]") {
+      direction : input;
+      capacitance : 0.0093;
+    }
+    pin("io_fdi_lpData_bits[59]") {
+      direction : input;
+      capacitance : 0.0088;
+    }
+    pin("io_fdi_lpData_bits[58]") {
+      direction : input;
+      capacitance : 0.0126;
+    }
+    pin("io_fdi_lpData_bits[57]") {
+      direction : input;
+      capacitance : 0.0074;
+    }
+    pin("io_fdi_lpData_bits[56]") {
+      direction : input;
+      capacitance : 0.0054;
+    }
+    pin("io_fdi_lpData_bits[55]") {
+      direction : input;
+      capacitance : 0.0077;
+    }
+    pin("io_fdi_lpData_bits[54]") {
+      direction : input;
+      capacitance : 0.0103;
+    }
+    pin("io_fdi_lpData_bits[53]") {
+      direction : input;
+      capacitance : 0.0080;
+    }
+    pin("io_fdi_lpData_bits[52]") {
+      direction : input;
+      capacitance : 0.0103;
+    }
+    pin("io_fdi_lpData_bits[51]") {
+      direction : input;
+      capacitance : 0.0106;
+    }
+    pin("io_fdi_lpData_bits[50]") {
+      direction : input;
+      capacitance : 0.0106;
+    }
+    pin("io_fdi_lpData_bits[49]") {
+      direction : input;
+      capacitance : 0.0100;
+    }
+    pin("io_fdi_lpData_bits[48]") {
+      direction : input;
+      capacitance : 0.0051;
+    }
+    pin("io_fdi_lpData_bits[47]") {
+      direction : input;
+      capacitance : 0.0068;
+    }
+    pin("io_fdi_lpData_bits[46]") {
+      direction : input;
+      capacitance : 0.0109;
+    }
+    pin("io_fdi_lpData_bits[45]") {
+      direction : input;
+      capacitance : 0.0064;
+    }
+    pin("io_fdi_lpData_bits[44]") {
+      direction : input;
+      capacitance : 0.0102;
+    }
+    pin("io_fdi_lpData_bits[43]") {
+      direction : input;
+      capacitance : 0.0102;
+    }
+    pin("io_fdi_lpData_bits[42]") {
+      direction : input;
+      capacitance : 0.0107;
+    }
+    pin("io_fdi_lpData_bits[41]") {
+      direction : input;
+      capacitance : 0.0090;
+    }
+    pin("io_fdi_lpData_bits[40]") {
+      direction : input;
+      capacitance : 0.0038;
+    }
+    pin("io_fdi_lpData_bits[39]") {
+      direction : input;
+      capacitance : 0.0067;
+    }
+    pin("io_fdi_lpData_bits[38]") {
+      direction : input;
+      capacitance : 0.0078;
+    }
+    pin("io_fdi_lpData_bits[37]") {
+      direction : input;
+      capacitance : 0.0033;
+    }
+    pin("io_fdi_lpData_bits[36]") {
+      direction : input;
+      capacitance : 0.0032;
+    }
+    pin("io_fdi_lpData_bits[35]") {
+      direction : input;
+      capacitance : 0.0039;
+    }
+    pin("io_fdi_lpData_bits[34]") {
+      direction : input;
+      capacitance : 0.0093;
+    }
+    pin("io_fdi_lpData_bits[33]") {
+      direction : input;
+      capacitance : 0.0090;
+    }
+    pin("io_fdi_lpData_bits[32]") {
+      direction : input;
+      capacitance : 0.0036;
+    }
+    pin("io_fdi_lpData_bits[31]") {
+      direction : input;
+      capacitance : 0.0037;
+    }
+    pin("io_fdi_lpData_bits[30]") {
+      direction : input;
+      capacitance : 0.0103;
+    }
+    pin("io_fdi_lpData_bits[29]") {
+      direction : input;
+      capacitance : 0.0097;
+    }
+    pin("io_fdi_lpData_bits[28]") {
+      direction : input;
+      capacitance : 0.0100;
+    }
+    pin("io_fdi_lpData_bits[27]") {
+      direction : input;
+      capacitance : 0.0048;
+    }
+    pin("io_fdi_lpData_bits[26]") {
+      direction : input;
+      capacitance : 0.0105;
+    }
+    pin("io_fdi_lpData_bits[25]") {
+      direction : input;
+      capacitance : 0.0103;
+    }
+    pin("io_fdi_lpData_bits[24]") {
+      direction : input;
+      capacitance : 0.0083;
+    }
+    pin("io_fdi_lpData_bits[23]") {
+      direction : input;
+      capacitance : 0.0032;
+    }
+    pin("io_fdi_lpData_bits[22]") {
+      direction : input;
+      capacitance : 0.0084;
+    }
+    pin("io_fdi_lpData_bits[21]") {
+      direction : input;
+      capacitance : 0.0129;
+    }
+    pin("io_fdi_lpData_bits[20]") {
+      direction : input;
+      capacitance : 0.0085;
+    }
+    pin("io_fdi_lpData_bits[19]") {
+      direction : input;
+      capacitance : 0.0033;
+    }
+    pin("io_fdi_lpData_bits[18]") {
+      direction : input;
+      capacitance : 0.0107;
+    }
+    pin("io_fdi_lpData_bits[17]") {
+      direction : input;
+      capacitance : 0.0033;
+    }
+    pin("io_fdi_lpData_bits[16]") {
+      direction : input;
+      capacitance : 0.0111;
+    }
+    pin("io_fdi_lpData_bits[15]") {
+      direction : input;
+      capacitance : 0.0032;
+    }
+    pin("io_fdi_lpData_bits[14]") {
+      direction : input;
+      capacitance : 0.0083;
+    }
+    pin("io_fdi_lpData_bits[13]") {
+      direction : input;
+      capacitance : 0.0042;
+    }
+    pin("io_fdi_lpData_bits[12]") {
+      direction : input;
+      capacitance : 0.0054;
+    }
+    pin("io_fdi_lpData_bits[11]") {
+      direction : input;
+      capacitance : 0.0052;
+    }
+    pin("io_fdi_lpData_bits[10]") {
+      direction : input;
+      capacitance : 0.0084;
+    }
+    pin("io_fdi_lpData_bits[9]") {
+      direction : input;
+      capacitance : 0.0062;
+    }
+    pin("io_fdi_lpData_bits[8]") {
+      direction : input;
+      capacitance : 0.0084;
+    }
+    pin("io_fdi_lpData_bits[7]") {
+      direction : input;
+      capacitance : 0.0113;
+    }
+    pin("io_fdi_lpData_bits[6]") {
+      direction : input;
+      capacitance : 0.0029;
+    }
+    pin("io_fdi_lpData_bits[5]") {
+      direction : input;
+      capacitance : 0.0064;
+    }
+    pin("io_fdi_lpData_bits[4]") {
+      direction : input;
+      capacitance : 0.0062;
+    }
+    pin("io_fdi_lpData_bits[3]") {
+      direction : input;
+      capacitance : 0.0031;
+    }
+    pin("io_fdi_lpData_bits[2]") {
+      direction : input;
+      capacitance : 0.0106;
+    }
+    pin("io_fdi_lpData_bits[1]") {
+      direction : input;
+      capacitance : 0.0031;
+    }
+    pin("io_fdi_lpData_bits[0]") {
+      direction : input;
+      capacitance : 0.0091;
+    }
+    }
+    bus("io_fdi_lpDllp_bits") {
+      bus_type : io_fdi_lpDllp_bits;
+      direction : input;
+      capacitance : 0.0000;
+    pin("io_fdi_lpDllp_bits[7]") {
+      direction : input;
+      capacitance : 0.0000;
+    }
+    pin("io_fdi_lpDllp_bits[6]") {
+      direction : input;
+      capacitance : 0.0000;
+    }
+    pin("io_fdi_lpDllp_bits[5]") {
+      direction : input;
+      capacitance : 0.0000;
+    }
+    pin("io_fdi_lpDllp_bits[4]") {
+      direction : input;
+      capacitance : 0.0000;
+    }
+    pin("io_fdi_lpDllp_bits[3]") {
+      direction : input;
+      capacitance : 0.0000;
+    }
+    pin("io_fdi_lpDllp_bits[2]") {
+      direction : input;
+      capacitance : 0.0000;
+    }
+    pin("io_fdi_lpDllp_bits[1]") {
+      direction : input;
+      capacitance : 0.0000;
+    }
+    pin("io_fdi_lpDllp_bits[0]") {
+      direction : input;
+      capacitance : 0.0000;
+    }
+    }
+    bus("io_fdi_lpStateReq") {
+      bus_type : io_fdi_lpStateReq;
+      direction : input;
+      capacitance : 0.0000;
+    pin("io_fdi_lpStateReq[3]") {
+      direction : input;
+      capacitance : 0.0090;
+    }
+    pin("io_fdi_lpStateReq[2]") {
+      direction : input;
+      capacitance : 0.0111;
+    }
+    pin("io_fdi_lpStateReq[1]") {
+      direction : input;
+      capacitance : 0.0082;
+    }
+    pin("io_fdi_lpStateReq[0]") {
+      direction : input;
+      capacitance : 0.0032;
+    }
+    }
+    bus("io_fdi_lpStream_protoType") {
+      bus_type : io_fdi_lpStream_protoType;
+      direction : input;
+      capacitance : 0.0000;
+    pin("io_fdi_lpStream_protoType[2]") {
+      direction : input;
+      capacitance : 0.0000;
+    }
+    pin("io_fdi_lpStream_protoType[1]") {
+      direction : input;
+      capacitance : 0.0000;
+    }
+    pin("io_fdi_lpStream_protoType[0]") {
+      direction : input;
+      capacitance : 0.0000;
+    }
+    }
+    bus("io_fdi_plConfig_bits") {
+      bus_type : io_fdi_plConfig_bits;
+      direction : output;
+      capacitance : 0.0000;
+    pin("io_fdi_plConfig_bits[31]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plConfig_bits[30]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plConfig_bits[29]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plConfig_bits[28]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plConfig_bits[27]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plConfig_bits[26]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plConfig_bits[25]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plConfig_bits[24]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plConfig_bits[23]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plConfig_bits[22]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plConfig_bits[21]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plConfig_bits[20]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plConfig_bits[19]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plConfig_bits[18]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plConfig_bits[17]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plConfig_bits[16]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plConfig_bits[15]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plConfig_bits[14]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plConfig_bits[13]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plConfig_bits[12]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plConfig_bits[11]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plConfig_bits[10]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plConfig_bits[9]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plConfig_bits[8]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plConfig_bits[7]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plConfig_bits[6]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plConfig_bits[5]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plConfig_bits[4]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plConfig_bits[3]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plConfig_bits[2]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plConfig_bits[1]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plConfig_bits[0]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    }
+    bus("io_fdi_plData_bits") {
+      bus_type : io_fdi_plData_bits;
+      direction : output;
+      capacitance : 0.0000;
+    pin("io_fdi_plData_bits[63]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[62]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[61]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[60]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[59]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[58]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[57]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[56]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[55]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[54]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[53]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[52]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[51]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[50]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[49]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[48]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[47]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[46]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[45]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[44]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[43]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[42]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[41]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[40]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[39]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[38]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[37]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[36]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[35]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[34]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[33]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[32]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[31]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[30]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[29]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[28]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[27]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[26]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[25]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[24]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[23]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[22]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[21]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[20]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[19]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[18]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[17]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[16]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[15]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[14]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[13]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[12]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[11]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[10]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[9]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[8]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[7]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[6]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[5]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[4]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[3]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[2]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[1]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plData_bits[0]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    }
+    bus("io_fdi_plDllp_bits") {
+      bus_type : io_fdi_plDllp_bits;
+      direction : output;
+      capacitance : 0.0000;
+    pin("io_fdi_plDllp_bits[7]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plDllp_bits[6]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plDllp_bits[5]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plDllp_bits[4]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plDllp_bits[3]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plDllp_bits[2]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plDllp_bits[1]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plDllp_bits[0]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    }
+    bus("io_fdi_plLinkWidth") {
+      bus_type : io_fdi_plLinkWidth;
+      direction : output;
+      capacitance : 0.0000;
+    pin("io_fdi_plLinkWidth[2]") {
+      direction : output;
+      capacitance : 0.0334;
+      timing() {
+        related_pin : "io_rdi_plLinkWidth[2]";
+        timing_sense : positive_unate;
+        timing_type : combinational;
+	cell_rise(template_9) {
+          values("1.14541,1.15574,1.18260,1.25490,1.48015,2.21993,4.69205");
+	}
+	rise_transition(template_9) {
+          values("0.03043,0.03919,0.06658,0.15757,0.47275,1.52754,5.00242");
+	}
+	cell_fall(template_10) {
+          values("0.97972,0.98965,1.01368,1.06736,1.20313,1.62427,3.01706");
+	}
+	fall_transition(template_10) {
+          values("0.03256,0.03945,0.05710,0.10724,0.27064,0.84348,2.74193");
+	}
+      }
+    }
+    pin("io_fdi_plLinkWidth[1]") {
+      direction : output;
+      capacitance : 0.0334;
+      timing() {
+        related_pin : "io_rdi_plLinkWidth[1]";
+        timing_sense : positive_unate;
+        timing_type : combinational;
+	cell_rise(template_7) {
+          values("1.56342,1.57669,1.60873,1.68452,1.91025,2.65011,5.11137");
+	}
+	rise_transition(template_7) {
+          values("0.04598,0.05425,0.07950,0.16429,0.47299,1.52352,5.01021");
+	}
+	cell_fall(template_8) {
+          values("1.19474,1.20509,1.22992,1.28473,1.42055,1.84279,3.24280");
+	}
+	fall_transition(template_8) {
+          values("0.03574,0.04221,0.05977,0.10871,0.27094,0.84204,2.74959");
+	}
+      }
+    }
+    pin("io_fdi_plLinkWidth[0]") {
+      direction : output;
+      capacitance : 0.0334;
+      timing() {
+        related_pin : "io_rdi_plLinkWidth[0]";
+        timing_sense : positive_unate;
+        timing_type : combinational;
+	cell_rise(template_5) {
+          values("1.16598,1.17632,1.20314,1.27545,1.50068,2.24018,4.71330");
+	}
+	rise_transition(template_5) {
+          values("0.03041,0.03916,0.06659,0.15757,0.47277,1.52746,5.00162");
+	}
+	cell_fall(template_6) {
+          values("0.97060,0.98053,1.00456,1.05825,1.19402,1.61515,3.00795");
+	}
+	fall_transition(template_6) {
+          values("0.03256,0.03945,0.05710,0.10724,0.27064,0.84346,2.74195");
+	}
+      }
+    }
+    }
+    bus("io_fdi_plProtocol") {
+      bus_type : io_fdi_plProtocol;
+      direction : output;
+      capacitance : 0.0000;
+    pin("io_fdi_plProtocol[2]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plProtocol[1]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plProtocol[0]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    }
+    bus("io_fdi_plProtocolFlitFormat") {
+      bus_type : io_fdi_plProtocolFlitFormat;
+      direction : output;
+      capacitance : 0.0000;
+    pin("io_fdi_plProtocolFlitFormat[2]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plProtocolFlitFormat[1]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plProtocolFlitFormat[0]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    }
+    bus("io_fdi_plSpeedMode") {
+      bus_type : io_fdi_plSpeedMode;
+      direction : output;
+      capacitance : 0.0000;
+    pin("io_fdi_plSpeedMode[2]") {
+      direction : output;
+      capacitance : 0.0334;
+      timing() {
+        related_pin : "io_rdi_plSpeedMode[2]";
+        timing_sense : positive_unate;
+        timing_type : combinational;
+	cell_rise(template_15) {
+          values("1.07556,1.08585,1.11262,1.18491,1.41025,2.14996,4.61971");
+	}
+	rise_transition(template_15) {
+          values("0.03054,0.03931,0.06667,0.15760,0.47286,1.52750,5.00129");
+	}
+	cell_fall(template_16) {
+          values("1.02658,1.03648,1.06054,1.11414,1.25003,1.67126,3.06406");
+	}
+	fall_transition(template_16) {
+          values("0.03258,0.03943,0.05708,0.10708,0.27044,0.84174,2.74370");
+	}
+      }
+    }
+    pin("io_fdi_plSpeedMode[1]") {
+      direction : output;
+      capacitance : 0.0334;
+      timing() {
+        related_pin : "io_rdi_plSpeedMode[1]";
+        timing_sense : positive_unate;
+        timing_type : combinational;
+	cell_rise(template_13) {
+          values("0.83913,0.84926,0.87603,0.94829,1.17393,1.91499,4.37343");
+	}
+	rise_transition(template_13) {
+          values("0.03088,0.03972,0.06687,0.15765,0.47306,1.52783,5.00282");
+	}
+	cell_fall(template_14) {
+          values("0.79500,0.80493,0.82896,0.88267,1.01865,1.44021,2.83404");
+	}
+	fall_transition(template_14) {
+          values("0.03267,0.03938,0.05712,0.10713,0.27053,0.84145,2.74581");
+	}
+      }
+    }
+    pin("io_fdi_plSpeedMode[0]") {
+      direction : output;
+      capacitance : 0.0334;
+      timing() {
+        related_pin : "io_rdi_plSpeedMode[0]";
+        timing_sense : positive_unate;
+        timing_type : combinational;
+	cell_rise(template_11) {
+          values("0.58567,0.59589,0.62265,0.69493,0.92042,1.66082,4.12479");
+	}
+	rise_transition(template_11) {
+          values("0.03071,0.03952,0.06677,0.15762,0.47296,1.52767,5.00207");
+	}
+	cell_fall(template_12) {
+          values("0.58567,0.59557,0.61964,0.67323,0.80917,1.23049,2.62349");
+	}
+	fall_transition(template_12) {
+          values("0.03260,0.03941,0.05709,0.10705,0.27041,0.84129,2.74451");
+	}
+      }
+    }
+    }
+    bus("io_fdi_plStateStatus") {
+      bus_type : io_fdi_plStateStatus;
+      direction : output;
+      capacitance : 0.0000;
+    pin("io_fdi_plStateStatus[3]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plStateStatus[2]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plStateStatus[1]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plStateStatus[0]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    }
+    bus("io_fdi_plStream_protoType") {
+      bus_type : io_fdi_plStream_protoType;
+      direction : output;
+      capacitance : 0.0000;
+    pin("io_fdi_plStream_protoType[2]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plStream_protoType[1]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_fdi_plStream_protoType[0]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    }
+    bus("io_rdi_lpConfig_bits") {
+      bus_type : io_rdi_lpConfig_bits;
+      direction : output;
+      capacitance : 0.0000;
+    pin("io_rdi_lpConfig_bits[31]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpConfig_bits[30]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpConfig_bits[29]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpConfig_bits[28]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpConfig_bits[27]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpConfig_bits[26]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpConfig_bits[25]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpConfig_bits[24]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpConfig_bits[23]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpConfig_bits[22]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpConfig_bits[21]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpConfig_bits[20]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpConfig_bits[19]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpConfig_bits[18]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpConfig_bits[17]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpConfig_bits[16]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpConfig_bits[15]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpConfig_bits[14]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpConfig_bits[13]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpConfig_bits[12]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpConfig_bits[11]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpConfig_bits[10]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpConfig_bits[9]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpConfig_bits[8]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpConfig_bits[7]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpConfig_bits[6]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpConfig_bits[5]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpConfig_bits[4]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpConfig_bits[3]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpConfig_bits[2]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpConfig_bits[1]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpConfig_bits[0]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    }
+    bus("io_rdi_lpData_bits") {
+      bus_type : io_rdi_lpData_bits;
+      direction : output;
+      capacitance : 0.0000;
+    pin("io_rdi_lpData_bits[63]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[62]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[61]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[60]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[59]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[58]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[57]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[56]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[55]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[54]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[53]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[52]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[51]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[50]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[49]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[48]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[47]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[46]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[45]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[44]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[43]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[42]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[41]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[40]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[39]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[38]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[37]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[36]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[35]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[34]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[33]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[32]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[31]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[30]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[29]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[28]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[27]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[26]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[25]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[24]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[23]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[22]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[21]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[20]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[19]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[18]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[17]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[16]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[15]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[14]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[13]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[12]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[11]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[10]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[9]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[8]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[7]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[6]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[5]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[4]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[3]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[2]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[1]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpData_bits[0]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    }
+    bus("io_rdi_lpStateReq") {
+      bus_type : io_rdi_lpStateReq;
+      direction : output;
+      capacitance : 0.0000;
+    pin("io_rdi_lpStateReq[3]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpStateReq[2]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpStateReq[1]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("io_rdi_lpStateReq[0]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    }
+    bus("io_rdi_plConfig_bits") {
+      bus_type : io_rdi_plConfig_bits;
+      direction : input;
+      capacitance : 0.0000;
+    pin("io_rdi_plConfig_bits[31]") {
+      direction : input;
+      capacitance : 0.0124;
+    }
+    pin("io_rdi_plConfig_bits[30]") {
+      direction : input;
+      capacitance : 0.0111;
+    }
+    pin("io_rdi_plConfig_bits[29]") {
+      direction : input;
+      capacitance : 0.0115;
+    }
+    pin("io_rdi_plConfig_bits[28]") {
+      direction : input;
+      capacitance : 0.0101;
+    }
+    pin("io_rdi_plConfig_bits[27]") {
+      direction : input;
+      capacitance : 0.0104;
+    }
+    pin("io_rdi_plConfig_bits[26]") {
+      direction : input;
+      capacitance : 0.0106;
+    }
+    pin("io_rdi_plConfig_bits[25]") {
+      direction : input;
+      capacitance : 0.0100;
+    }
+    pin("io_rdi_plConfig_bits[24]") {
+      direction : input;
+      capacitance : 0.0115;
+    }
+    pin("io_rdi_plConfig_bits[23]") {
+      direction : input;
+      capacitance : 0.0103;
+    }
+    pin("io_rdi_plConfig_bits[22]") {
+      direction : input;
+      capacitance : 0.0108;
+    }
+    pin("io_rdi_plConfig_bits[21]") {
+      direction : input;
+      capacitance : 0.0111;
+    }
+    pin("io_rdi_plConfig_bits[20]") {
+      direction : input;
+      capacitance : 0.0109;
+    }
+    pin("io_rdi_plConfig_bits[19]") {
+      direction : input;
+      capacitance : 0.0106;
+    }
+    pin("io_rdi_plConfig_bits[18]") {
+      direction : input;
+      capacitance : 0.0107;
+    }
+    pin("io_rdi_plConfig_bits[17]") {
+      direction : input;
+      capacitance : 0.0141;
+    }
+    pin("io_rdi_plConfig_bits[16]") {
+      direction : input;
+      capacitance : 0.0106;
+    }
+    pin("io_rdi_plConfig_bits[15]") {
+      direction : input;
+      capacitance : 0.0102;
+    }
+    pin("io_rdi_plConfig_bits[14]") {
+      direction : input;
+      capacitance : 0.0110;
+    }
+    pin("io_rdi_plConfig_bits[13]") {
+      direction : input;
+      capacitance : 0.0103;
+    }
+    pin("io_rdi_plConfig_bits[12]") {
+      direction : input;
+      capacitance : 0.0103;
+    }
+    pin("io_rdi_plConfig_bits[11]") {
+      direction : input;
+      capacitance : 0.0122;
+    }
+    pin("io_rdi_plConfig_bits[10]") {
+      direction : input;
+      capacitance : 0.0102;
+    }
+    pin("io_rdi_plConfig_bits[9]") {
+      direction : input;
+      capacitance : 0.0118;
+    }
+    pin("io_rdi_plConfig_bits[8]") {
+      direction : input;
+      capacitance : 0.0110;
+    }
+    pin("io_rdi_plConfig_bits[7]") {
+      direction : input;
+      capacitance : 0.0116;
+    }
+    pin("io_rdi_plConfig_bits[6]") {
+      direction : input;
+      capacitance : 0.0106;
+    }
+    pin("io_rdi_plConfig_bits[5]") {
+      direction : input;
+      capacitance : 0.0108;
+    }
+    pin("io_rdi_plConfig_bits[4]") {
+      direction : input;
+      capacitance : 0.0106;
+    }
+    pin("io_rdi_plConfig_bits[3]") {
+      direction : input;
+      capacitance : 0.0126;
+    }
+    pin("io_rdi_plConfig_bits[2]") {
+      direction : input;
+      capacitance : 0.0103;
+    }
+    pin("io_rdi_plConfig_bits[1]") {
+      direction : input;
+      capacitance : 0.0112;
+    }
+    pin("io_rdi_plConfig_bits[0]") {
+      direction : input;
+      capacitance : 0.0106;
+    }
+    }
+    bus("io_rdi_plData_bits") {
+      bus_type : io_rdi_plData_bits;
+      direction : input;
+      capacitance : 0.0000;
+    pin("io_rdi_plData_bits[63]") {
+      direction : input;
+      capacitance : 0.0027;
+    }
+    pin("io_rdi_plData_bits[62]") {
+      direction : input;
+      capacitance : 0.0043;
+    }
+    pin("io_rdi_plData_bits[61]") {
+      direction : input;
+      capacitance : 0.0080;
+    }
+    pin("io_rdi_plData_bits[60]") {
+      direction : input;
+      capacitance : 0.0070;
+    }
+    pin("io_rdi_plData_bits[59]") {
+      direction : input;
+      capacitance : 0.0041;
+    }
+    pin("io_rdi_plData_bits[58]") {
+      direction : input;
+      capacitance : 0.0078;
+    }
+    pin("io_rdi_plData_bits[57]") {
+      direction : input;
+      capacitance : 0.0056;
+    }
+    pin("io_rdi_plData_bits[56]") {
+      direction : input;
+      capacitance : 0.0112;
+    }
+    pin("io_rdi_plData_bits[55]") {
+      direction : input;
+      capacitance : 0.0039;
+    }
+    pin("io_rdi_plData_bits[54]") {
+      direction : input;
+      capacitance : 0.0026;
+    }
+    pin("io_rdi_plData_bits[53]") {
+      direction : input;
+      capacitance : 0.0091;
+    }
+    pin("io_rdi_plData_bits[52]") {
+      direction : input;
+      capacitance : 0.0060;
+    }
+    pin("io_rdi_plData_bits[51]") {
+      direction : input;
+      capacitance : 0.0088;
+    }
+    pin("io_rdi_plData_bits[50]") {
+      direction : input;
+      capacitance : 0.0109;
+    }
+    pin("io_rdi_plData_bits[49]") {
+      direction : input;
+      capacitance : 0.0073;
+    }
+    pin("io_rdi_plData_bits[48]") {
+      direction : input;
+      capacitance : 0.0031;
+    }
+    pin("io_rdi_plData_bits[47]") {
+      direction : input;
+      capacitance : 0.0060;
+    }
+    pin("io_rdi_plData_bits[46]") {
+      direction : input;
+      capacitance : 0.0031;
+    }
+    pin("io_rdi_plData_bits[45]") {
+      direction : input;
+      capacitance : 0.0031;
+    }
+    pin("io_rdi_plData_bits[44]") {
+      direction : input;
+      capacitance : 0.0101;
+    }
+    pin("io_rdi_plData_bits[43]") {
+      direction : input;
+      capacitance : 0.0029;
+    }
+    pin("io_rdi_plData_bits[42]") {
+      direction : input;
+      capacitance : 0.0038;
+    }
+    pin("io_rdi_plData_bits[41]") {
+      direction : input;
+      capacitance : 0.0063;
+    }
+    pin("io_rdi_plData_bits[40]") {
+      direction : input;
+      capacitance : 0.0045;
+    }
+    pin("io_rdi_plData_bits[39]") {
+      direction : input;
+      capacitance : 0.0111;
+    }
+    pin("io_rdi_plData_bits[38]") {
+      direction : input;
+      capacitance : 0.0064;
+    }
+    pin("io_rdi_plData_bits[37]") {
+      direction : input;
+      capacitance : 0.0112;
+    }
+    pin("io_rdi_plData_bits[36]") {
+      direction : input;
+      capacitance : 0.0025;
+    }
+    pin("io_rdi_plData_bits[35]") {
+      direction : input;
+      capacitance : 0.0045;
+    }
+    pin("io_rdi_plData_bits[34]") {
+      direction : input;
+      capacitance : 0.0110;
+    }
+    pin("io_rdi_plData_bits[33]") {
+      direction : input;
+      capacitance : 0.0060;
+    }
+    pin("io_rdi_plData_bits[32]") {
+      direction : input;
+      capacitance : 0.0031;
+    }
+    pin("io_rdi_plData_bits[31]") {
+      direction : input;
+      capacitance : 0.0122;
+    }
+    pin("io_rdi_plData_bits[30]") {
+      direction : input;
+      capacitance : 0.0060;
+    }
+    pin("io_rdi_plData_bits[29]") {
+      direction : input;
+      capacitance : 0.0054;
+    }
+    pin("io_rdi_plData_bits[28]") {
+      direction : input;
+      capacitance : 0.0110;
+    }
+    pin("io_rdi_plData_bits[27]") {
+      direction : input;
+      capacitance : 0.0077;
+    }
+    pin("io_rdi_plData_bits[26]") {
+      direction : input;
+      capacitance : 0.0033;
+    }
+    pin("io_rdi_plData_bits[25]") {
+      direction : input;
+      capacitance : 0.0049;
+    }
+    pin("io_rdi_plData_bits[24]") {
+      direction : input;
+      capacitance : 0.0024;
+    }
+    pin("io_rdi_plData_bits[23]") {
+      direction : input;
+      capacitance : 0.0033;
+    }
+    pin("io_rdi_plData_bits[22]") {
+      direction : input;
+      capacitance : 0.0061;
+    }
+    pin("io_rdi_plData_bits[21]") {
+      direction : input;
+      capacitance : 0.0037;
+    }
+    pin("io_rdi_plData_bits[20]") {
+      direction : input;
+      capacitance : 0.0109;
+    }
+    pin("io_rdi_plData_bits[19]") {
+      direction : input;
+      capacitance : 0.0057;
+    }
+    pin("io_rdi_plData_bits[18]") {
+      direction : input;
+      capacitance : 0.0048;
+    }
+    pin("io_rdi_plData_bits[17]") {
+      direction : input;
+      capacitance : 0.0043;
+    }
+    pin("io_rdi_plData_bits[16]") {
+      direction : input;
+      capacitance : 0.0040;
+    }
+    pin("io_rdi_plData_bits[15]") {
+      direction : input;
+      capacitance : 0.0046;
+    }
+    pin("io_rdi_plData_bits[14]") {
+      direction : input;
+      capacitance : 0.0074;
+    }
+    pin("io_rdi_plData_bits[13]") {
+      direction : input;
+      capacitance : 0.0111;
+    }
+    pin("io_rdi_plData_bits[12]") {
+      direction : input;
+      capacitance : 0.0052;
+    }
+    pin("io_rdi_plData_bits[11]") {
+      direction : input;
+      capacitance : 0.0105;
+    }
+    pin("io_rdi_plData_bits[10]") {
+      direction : input;
+      capacitance : 0.0066;
+    }
+    pin("io_rdi_plData_bits[9]") {
+      direction : input;
+      capacitance : 0.0037;
+    }
+    pin("io_rdi_plData_bits[8]") {
+      direction : input;
+      capacitance : 0.0087;
+    }
+    pin("io_rdi_plData_bits[7]") {
+      direction : input;
+      capacitance : 0.0032;
+    }
+    pin("io_rdi_plData_bits[6]") {
+      direction : input;
+      capacitance : 0.0040;
+    }
+    pin("io_rdi_plData_bits[5]") {
+      direction : input;
+      capacitance : 0.0053;
+    }
+    pin("io_rdi_plData_bits[4]") {
+      direction : input;
+      capacitance : 0.0029;
+    }
+    pin("io_rdi_plData_bits[3]") {
+      direction : input;
+      capacitance : 0.0061;
+    }
+    pin("io_rdi_plData_bits[2]") {
+      direction : input;
+      capacitance : 0.0034;
+    }
+    pin("io_rdi_plData_bits[1]") {
+      direction : input;
+      capacitance : 0.0099;
+    }
+    pin("io_rdi_plData_bits[0]") {
+      direction : input;
+      capacitance : 0.0033;
+    }
+    }
+    bus("io_rdi_plLinkWidth") {
+      bus_type : io_rdi_plLinkWidth;
+      direction : input;
+      capacitance : 0.0000;
+    pin("io_rdi_plLinkWidth[2]") {
+      direction : input;
+      capacitance : 0.0039;
+    }
+    pin("io_rdi_plLinkWidth[1]") {
+      direction : input;
+      capacitance : 0.0052;
+    }
+    pin("io_rdi_plLinkWidth[0]") {
+      direction : input;
+      capacitance : 0.0106;
+    }
+    }
+    bus("io_rdi_plSpeedMode") {
+      bus_type : io_rdi_plSpeedMode;
+      direction : input;
+      capacitance : 0.0000;
+    pin("io_rdi_plSpeedMode[2]") {
+      direction : input;
+      capacitance : 0.0032;
+    }
+    pin("io_rdi_plSpeedMode[1]") {
+      direction : input;
+      capacitance : 0.0081;
+    }
+    pin("io_rdi_plSpeedMode[0]") {
+      direction : input;
+      capacitance : 0.0029;
+    }
+    }
+    bus("io_rdi_plStateStatus") {
+      bus_type : io_rdi_plStateStatus;
+      direction : input;
+      capacitance : 0.0000;
+    pin("io_rdi_plStateStatus[3]") {
+      direction : input;
+      capacitance : 0.0082;
+    }
+    pin("io_rdi_plStateStatus[2]") {
+      direction : input;
+      capacitance : 0.0091;
+    }
+    pin("io_rdi_plStateStatus[1]") {
+      direction : input;
+      capacitance : 0.0101;
+    }
+    pin("io_rdi_plStateStatus[0]") {
+      direction : input;
+      capacitance : 0.0037;
+    }
+    }
+  }
+
+}

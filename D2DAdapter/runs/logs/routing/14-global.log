@@ -1,0 +1,1713 @@
+OpenROAD 7f00621cb612fd94e15b35790afe744c89d433a7 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[WARNING STA-0357] virtual clock clk can not be propagated.
+[INFO]: Setting signal min routing layer to: met1 and clock min routing layer to met1. 
+[INFO]: Setting signal max routing layer to: met5 and clock max routing layer to met5. 
+-congestion_iterations 50 -verbose
+[INFO GRT-0020] Min routing layer: met1
+[INFO GRT-0021] Max routing layer: met5
+[INFO GRT-0022] Global adjustment: 30%
+[INFO GRT-0023] Grid origin: (0, 0)
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0088] Layer li1     Track-Pitch = 0.4600  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met1    Track-Pitch = 0.3400  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met2    Track-Pitch = 0.4600  line-2-Via Pitch: 0.3500
+[INFO GRT-0088] Layer met3    Track-Pitch = 0.6800  line-2-Via Pitch: 0.6150
+[INFO GRT-0088] Layer met4    Track-Pitch = 0.9200  line-2-Via Pitch: 1.0400
+[INFO GRT-0088] Layer met5    Track-Pitch = 3.4000  line-2-Via Pitch: 3.1100
+[INFO GRT-0019] Found 0 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 11
+[INFO GRT-0003] Macros: 0
+[INFO GRT-0004] Blockages: 329413
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+li1        Vertical            0             0          0.00%
+met1       Horizontal     729600        421092          42.28%
+met2       Vertical       547200        364559          33.38%
+met3       Horizontal     364800        254394          30.26%
+met4       Vertical       218880        143284          34.54%
+met5       Horizontal      72960         36288          50.26%
+---------------------------------------------------------------
+
+[INFO GRT-0101] Running extra iterations to remove overflow.
+[INFO GRT-0197] Via related to pin nodes: 337635
+[INFO GRT-0198] Via related Steiner nodes: 8042
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 404572
+[INFO GRT-0112] Final usage 3D: 1832086
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+li1                  0             0            0.00%             0 /  0 /  0
+met1            421092        250746           59.55%             0 /  0 /  0
+met2            364559        237516           65.15%             0 /  0 /  0
+met3            254394         58892           23.15%             0 /  0 /  0
+met4            143284         70571           49.25%             0 /  0 /  0
+met5             36288           645            1.78%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total          1219617        618370           50.70%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 5689933 um
+[INFO GRT-0014] Routed nets: 76752
+[INFO GRT-0006] Repairing antennas, iteration 1.
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[WARNING ANT-0009] Net _008839_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _014849_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _018385_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _018388_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _018389_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _018390_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _018391_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _018394_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _018395_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _018397_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _018425_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _018943_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net3 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net4 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net6 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net9 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net13 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net15 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net15 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net25 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net27 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net28 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net30 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net30 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net31 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net73 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net113 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net125 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net125 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net126 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net128 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net133 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net134 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net134 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net144 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net146 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net148 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net149 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net155 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net156 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net156 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net157 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net158 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net159 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net161 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net163 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net168 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net171 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net174 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net176 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net176 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net177 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net179 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net187 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net189 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net190 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net192 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net195 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net197 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net202 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net206 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net210 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net231 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net249 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net256 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net320 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net324 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net324 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net353 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net355 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net357 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net363 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net364 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net365 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net366 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net441 requires more than 10 diodes per gate to repair violations.
+[INFO GRT-0012] Found 950 antenna violations.
+[INFO GRT-0015] Inserted 3607 diodes.
+[INFO GRT-0054] Using detailed placer to place 496 diodes.
+[INFO GRT-0009] rerouting 50197 nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 35
+[INFO GRT-0006] Repairing antennas, iteration 2.
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[WARNING ANT-0009] Net _018396_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _018418_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net _018422_ requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net8 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net9 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net17 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net182 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net237 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net249 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net367 requires more than 10 diodes per gate to repair violations.
+[INFO GRT-0012] Found 455 antenna violations.
+[INFO GRT-0015] Inserted 2612 diodes.
+[INFO GRT-0054] Using detailed placer to place 891 diodes.
+[INFO GRT-0009] rerouting 4362 nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 101
+[INFO GRT-0006] Repairing antennas, iteration 3.
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[WARNING ANT-0009] Net net24 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net27 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net113 requires more than 10 diodes per gate to repair violations.
+[WARNING ANT-0009] Net net136 requires more than 10 diodes per gate to repair violations.
+[INFO GRT-0012] Found 174 antenna violations.
+[INFO GRT-0015] Inserted 904 diodes.
+[INFO GRT-0054] Using detailed placer to place 219 diodes.
+[INFO GRT-0009] rerouting 1340 nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 100
+Setting global connections for newly added cells...
+Writing OpenROAD database to /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/tmp/routing/14-global.odb...
+Writing layout to /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/tmp/routing/14-global.def...
+Writing routing guides to /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/tmp/routing/14-global.guide...
+[INFO]: Setting RC values...
+min_report
+
+===========================================================================
+report_checks -path_delay min (Hold)
+============================================================================
+Startpoint: io_rdi_plSpeedMode[0] (input port clocked by clk)
+Endpoint: io_fdi_plSpeedMode[0] (output port clocked by clk)
+Path Group: clk
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          2.00    2.00 v input external delay
+                  0.01    0.01    2.01 v io_rdi_plSpeedMode[0] (in)
+     1    0.01                           io_rdi_plSpeedMode[0] (net)
+                  0.01    0.00    2.01 v input213/A (sky130_fd_sc_hd__clkbuf_1)
+                  0.03    0.07    2.08 v input213/X (sky130_fd_sc_hd__clkbuf_1)
+     1    0.00                           net213 (net)
+                  0.03    0.00    2.08 v _129058_/A (sky130_fd_sc_hd__clkbuf_1)
+                  0.04    0.09    2.17 v _129058_/X (sky130_fd_sc_hd__clkbuf_1)
+     1    0.01                           net327 (net)
+                  0.04    0.00    2.17 v output327/A (sky130_fd_sc_hd__buf_2)
+                  0.09    0.17    2.34 v output327/X (sky130_fd_sc_hd__buf_2)
+     1    0.03                           io_fdi_plSpeedMode[0] (net)
+                  0.09    0.00    2.35 v io_fdi_plSpeedMode[0] (out)
+                                  2.35   data arrival time
+
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.25    0.25   clock uncertainty
+                          0.00    0.25   clock reconvergence pessimism
+                         -2.00   -1.75   output external delay
+                                 -1.75   data required time
+-----------------------------------------------------------------------------
+                                 -1.75   data required time
+                                 -2.35   data arrival time
+-----------------------------------------------------------------------------
+                                  4.10   slack (MET)
+
+
+Startpoint: io_rdi_plSpeedMode[1] (input port clocked by clk)
+Endpoint: io_fdi_plSpeedMode[1] (output port clocked by clk)
+Path Group: clk
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          2.00    2.00 v input external delay
+                  0.02    0.01    2.01 v io_rdi_plSpeedMode[1] (in)
+     1    0.01                           io_rdi_plSpeedMode[1] (net)
+                  0.02    0.00    2.01 v input214/A (sky130_fd_sc_hd__clkbuf_1)
+                  0.04    0.09    2.09 v input214/X (sky130_fd_sc_hd__clkbuf_1)
+     1    0.01                           net214 (net)
+                  0.04    0.00    2.09 v _129059_/A (sky130_fd_sc_hd__clkbuf_2)
+                  0.06    0.13    2.22 v _129059_/X (sky130_fd_sc_hd__clkbuf_2)
+     1    0.01                           net328 (net)
+                  0.06    0.00    2.22 v output328/A (sky130_fd_sc_hd__buf_2)
+                  0.09    0.18    2.40 v output328/X (sky130_fd_sc_hd__buf_2)
+     1    0.03                           io_fdi_plSpeedMode[1] (net)
+                  0.09    0.00    2.40 v io_fdi_plSpeedMode[1] (out)
+                                  2.40   data arrival time
+
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.25    0.25   clock uncertainty
+                          0.00    0.25   clock reconvergence pessimism
+                         -2.00   -1.75   output external delay
+                                 -1.75   data required time
+-----------------------------------------------------------------------------
+                                 -1.75   data required time
+                                 -2.40   data arrival time
+-----------------------------------------------------------------------------
+                                  4.15   slack (MET)
+
+
+Startpoint: io_rdi_plLinkWidth[2] (input port clocked by clk)
+Endpoint: io_fdi_plLinkWidth[2] (output port clocked by clk)
+Path Group: clk
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          2.00    2.00 v input external delay
+                  0.01    0.01    2.01 v io_rdi_plLinkWidth[2] (in)
+     1    0.01                           io_rdi_plLinkWidth[2] (net)
+                  0.01    0.00    2.01 v input212/A (sky130_fd_sc_hd__buf_4)
+                  0.10    0.18    2.19 v input212/X (sky130_fd_sc_hd__buf_4)
+    17    0.08                           net212 (net)
+                  0.11    0.01    2.20 v _129057_/A (sky130_fd_sc_hd__clkbuf_1)
+                  0.02    0.11    2.31 v _129057_/X (sky130_fd_sc_hd__clkbuf_1)
+     1    0.00                           net325 (net)
+                  0.02    0.00    2.31 v output325/A (sky130_fd_sc_hd__buf_2)
+                  0.09    0.16    2.47 v output325/X (sky130_fd_sc_hd__buf_2)
+     1    0.03                           io_fdi_plLinkWidth[2] (net)
+                  0.09    0.00    2.47 v io_fdi_plLinkWidth[2] (out)
+                                  2.47   data arrival time
+
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.25    0.25   clock uncertainty
+                          0.00    0.25   clock reconvergence pessimism
+                         -2.00   -1.75   output external delay
+                                 -1.75   data required time
+-----------------------------------------------------------------------------
+                                 -1.75   data required time
+                                 -2.47   data arrival time
+-----------------------------------------------------------------------------
+                                  4.22   slack (MET)
+
+
+Startpoint: io_rdi_plSpeedMode[2] (input port clocked by clk)
+Endpoint: io_fdi_plSpeedMode[2] (output port clocked by clk)
+Path Group: clk
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          2.00    2.00 v input external delay
+                  0.01    0.01    2.01 v io_rdi_plSpeedMode[2] (in)
+     1    0.00                           io_rdi_plSpeedMode[2] (net)
+                  0.01    0.00    2.01 v input215/A (sky130_fd_sc_hd__clkbuf_4)
+                  0.11    0.18    2.19 v input215/X (sky130_fd_sc_hd__clkbuf_4)
+     7    0.05                           net215 (net)
+                  0.11    0.01    2.20 v _129060_/A (sky130_fd_sc_hd__clkbuf_1)
+                  0.03    0.12    2.32 v _129060_/X (sky130_fd_sc_hd__clkbuf_1)
+     1    0.00                           net329 (net)
+                  0.03    0.00    2.32 v output329/A (sky130_fd_sc_hd__buf_2)
+                  0.09    0.17    2.49 v output329/X (sky130_fd_sc_hd__buf_2)
+     1    0.03                           io_fdi_plSpeedMode[2] (net)
+                  0.09    0.00    2.49 v io_fdi_plSpeedMode[2] (out)
+                                  2.49   data arrival time
+
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.25    0.25   clock uncertainty
+                          0.00    0.25   clock reconvergence pessimism
+                         -2.00   -1.75   output external delay
+                                 -1.75   data required time
+-----------------------------------------------------------------------------
+                                 -1.75   data required time
+                                 -2.49   data arrival time
+-----------------------------------------------------------------------------
+                                  4.24   slack (MET)
+
+
+Startpoint: io_rdi_plLinkWidth[0] (input port clocked by clk)
+Endpoint: io_fdi_plLinkWidth[0] (output port clocked by clk)
+Path Group: clk
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          2.00    2.00 v input external delay
+                  0.03    0.02    2.02 v io_rdi_plLinkWidth[0] (in)
+     1    0.01                           io_rdi_plLinkWidth[0] (net)
+                  0.03    0.00    2.02 v input210/A (sky130_fd_sc_hd__buf_12)
+                  0.11    0.16    2.18 v input210/X (sky130_fd_sc_hd__buf_12)
+    47    0.20                           net210 (net)
+                  0.14    0.04    2.22 v _129055_/A (sky130_fd_sc_hd__clkbuf_1)
+                  0.03    0.12    2.34 v _129055_/X (sky130_fd_sc_hd__clkbuf_1)
+     1    0.00                           net323 (net)
+                  0.03    0.00    2.34 v output323/A (sky130_fd_sc_hd__buf_2)
+                  0.09    0.17    2.51 v output323/X (sky130_fd_sc_hd__buf_2)
+     1    0.03                           io_fdi_plLinkWidth[0] (net)
+                  0.09    0.00    2.51 v io_fdi_plLinkWidth[0] (out)
+                                  2.51   data arrival time
+
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.25    0.25   clock uncertainty
+                          0.00    0.25   clock reconvergence pessimism
+                         -2.00   -1.75   output external delay
+                                 -1.75   data required time
+-----------------------------------------------------------------------------
+                                 -1.75   data required time
+                                 -2.51   data arrival time
+-----------------------------------------------------------------------------
+                                  4.26   slack (MET)
+
+
+min_report_end
+max_report
+
+===========================================================================
+report_checks -path_delay max (Setup)
+============================================================================
+Startpoint: io_fdi_lpRxActiveStatus (input port clocked by clk)
+Endpoint: io_fdi_lpConfigCredit (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          2.00    2.00 v input external delay
+                  0.03    0.02    2.02 v io_fdi_lpRxActiveStatus (in)
+     1    0.01                           io_fdi_lpRxActiveStatus (net)
+                  0.03    0.00    2.02 v input102/A (sky130_fd_sc_hd__buf_8)
+                  0.08    0.16    2.18 v input102/X (sky130_fd_sc_hd__buf_8)
+     7    0.10                           net102 (net)
+                  0.09    0.02    2.20 v _056543_/B (sky130_fd_sc_hd__and3b_1)
+                  0.07    0.22    2.42 v _056543_/X (sky130_fd_sc_hd__and3b_1)
+     4    0.01                           _019446_ (net)
+                  0.07    0.00    2.42 v _056546_/A2 (sky130_fd_sc_hd__o21bai_1)
+                  0.16    0.18    2.60 ^ _056546_/Y (sky130_fd_sc_hd__o21bai_1)
+     2    0.01                           _019449_ (net)
+                  0.16    0.00    2.60 ^ _056547_/A2 (sky130_fd_sc_hd__a21oi_1)
+                  0.07    0.12    2.72 v _056547_/Y (sky130_fd_sc_hd__a21oi_1)
+     2    0.01                           _019450_ (net)
+                  0.07    0.00    2.72 v _056548_/B (sky130_fd_sc_hd__or2_1)
+                  0.08    0.27    2.99 v _056548_/X (sky130_fd_sc_hd__or2_1)
+     2    0.01                           _019451_ (net)
+                  0.08    0.00    2.99 v _056551_/B (sky130_fd_sc_hd__or3b_4)
+                  0.10    0.45    3.44 v _056551_/X (sky130_fd_sc_hd__or3b_4)
+     6    0.02                           _019454_ (net)
+                  0.10    0.00    3.44 v _056723_/A2 (sky130_fd_sc_hd__a211oi_4)
+                  0.53    0.55    4.00 ^ _056723_/Y (sky130_fd_sc_hd__a211oi_4)
+     6    0.05                           _019626_ (net)
+                  0.53    0.00    4.00 ^ _056726_/A1 (sky130_fd_sc_hd__a21o_2)
+                  0.15    0.31    4.31 ^ _056726_/X (sky130_fd_sc_hd__a21o_2)
+     6    0.03                           _019629_ (net)
+                  0.15    0.00    4.31 ^ _056727_/C (sky130_fd_sc_hd__and3_4)
+                  0.21    0.35    4.66 ^ _056727_/X (sky130_fd_sc_hd__and3_4)
+     5    0.07                           _019630_ (net)
+                  0.21    0.01    4.67 ^ _056728_/A (sky130_fd_sc_hd__clkbuf_1)
+                  0.05    0.12    4.79 ^ _056728_/X (sky130_fd_sc_hd__clkbuf_1)
+     1    0.00                           net222 (net)
+                  0.05    0.00    4.79 ^ output222/A (sky130_fd_sc_hd__buf_2)
+                  0.18    0.22    5.01 ^ output222/X (sky130_fd_sc_hd__buf_2)
+     1    0.03                           io_fdi_lpConfigCredit (net)
+                  0.18    0.00    5.01 ^ io_fdi_lpConfigCredit (out)
+                                  5.01   data arrival time
+
+                  0.00   10.00   10.00   clock clk (rise edge)
+                          0.00   10.00   clock network delay (ideal)
+                         -0.25    9.75   clock uncertainty
+                          0.00    9.75   clock reconvergence pessimism
+                         -2.00    7.75   output external delay
+                                  7.75   data required time
+-----------------------------------------------------------------------------
+                                  7.75   data required time
+                                 -5.01   data arrival time
+-----------------------------------------------------------------------------
+                                  2.74   slack (MET)
+
+
+Startpoint: io_rdi_lpData_ready (input port clocked by clk)
+Endpoint: io_fdi_lpData_ready (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          2.00    2.00 ^ input external delay
+                  0.03    0.02    2.02 ^ io_rdi_lpData_ready (in)
+     1    0.00                           io_rdi_lpData_ready (net)
+                  0.03    0.00    2.02 ^ input110/A (sky130_fd_sc_hd__clkbuf_4)
+                  0.12    0.19    2.21 ^ input110/X (sky130_fd_sc_hd__clkbuf_4)
+     2    0.04                           net110 (net)
+                  0.13    0.01    2.22 ^ _055379_/A2 (sky130_fd_sc_hd__a31o_1)
+                  0.10    0.21    2.43 ^ _055379_/X (sky130_fd_sc_hd__a31o_1)
+     1    0.01                           _018356_ (net)
+                  0.10    0.00    2.43 ^ _055380_/A (sky130_fd_sc_hd__clkbuf_16)
+                  0.13    0.21    2.64 ^ _055380_/X (sky130_fd_sc_hd__clkbuf_16)
+     7    0.12                           net223 (net)
+                  0.16    0.05    2.69 ^ output223/A (sky130_fd_sc_hd__buf_2)
+                  0.18    0.25    2.94 ^ output223/X (sky130_fd_sc_hd__buf_2)
+     1    0.03                           io_fdi_lpData_ready (net)
+                  0.18    0.00    2.94 ^ io_fdi_lpData_ready (out)
+                                  2.94   data arrival time
+
+                  0.00   10.00   10.00   clock clk (rise edge)
+                          0.00   10.00   clock network delay (ideal)
+                         -0.25    9.75   clock uncertainty
+                          0.00    9.75   clock reconvergence pessimism
+                         -2.00    7.75   output external delay
+                                  7.75   data required time
+-----------------------------------------------------------------------------
+                                  7.75   data required time
+                                 -2.94   data arrival time
+-----------------------------------------------------------------------------
+                                  4.81   slack (MET)
+
+
+Startpoint: io_rdi_plLinkWidth[1] (input port clocked by clk)
+Endpoint: io_fdi_plLinkWidth[1] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          2.00    2.00 ^ input external delay
+                  0.03    0.02    2.02 ^ io_rdi_plLinkWidth[1] (in)
+     1    0.00                           io_rdi_plLinkWidth[1] (net)
+                  0.03    0.00    2.02 ^ input211/A (sky130_fd_sc_hd__clkbuf_1)
+                  0.13    0.14    2.16 ^ input211/X (sky130_fd_sc_hd__clkbuf_1)
+     1    0.01                           net211 (net)
+                  0.13    0.00    2.16 ^ _129056_/A (sky130_fd_sc_hd__buf_12)
+                  0.29    0.29    2.45 ^ _129056_/X (sky130_fd_sc_hd__buf_12)
+    57    0.26                           net324 (net)
+                  0.33    0.08    2.53 ^ output324/A (sky130_fd_sc_hd__buf_2)
+                  0.18    0.30    2.83 ^ output324/X (sky130_fd_sc_hd__buf_2)
+     1    0.03                           io_fdi_plLinkWidth[1] (net)
+                  0.18    0.00    2.83 ^ io_fdi_plLinkWidth[1] (out)
+                                  2.83   data arrival time
+
+                  0.00   10.00   10.00   clock clk (rise edge)
+                          0.00   10.00   clock network delay (ideal)
+                         -0.25    9.75   clock uncertainty
+                          0.00    9.75   clock reconvergence pessimism
+                         -2.00    7.75   output external delay
+                                  7.75   data required time
+-----------------------------------------------------------------------------
+                                  7.75   data required time
+                                 -2.83   data arrival time
+-----------------------------------------------------------------------------
+                                  4.92   slack (MET)
+
+
+Startpoint: io_rdi_plLinkWidth[0] (input port clocked by clk)
+Endpoint: io_fdi_plLinkWidth[0] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          2.00    2.00 ^ input external delay
+                  0.06    0.04    2.04 ^ io_rdi_plLinkWidth[0] (in)
+     1    0.01                           io_rdi_plLinkWidth[0] (net)
+                  0.06    0.00    2.04 ^ input210/A (sky130_fd_sc_hd__buf_12)
+                  0.23    0.23    2.27 ^ input210/X (sky130_fd_sc_hd__buf_12)
+    47    0.20                           net210 (net)
+                  0.25    0.05    2.32 ^ _129055_/A (sky130_fd_sc_hd__clkbuf_1)
+                  0.05    0.13    2.45 ^ _129055_/X (sky130_fd_sc_hd__clkbuf_1)
+     1    0.00                           net323 (net)
+                  0.05    0.00    2.45 ^ output323/A (sky130_fd_sc_hd__buf_2)
+                  0.18    0.22    2.67 ^ output323/X (sky130_fd_sc_hd__buf_2)
+     1    0.03                           io_fdi_plLinkWidth[0] (net)
+                  0.18    0.00    2.67 ^ io_fdi_plLinkWidth[0] (out)
+                                  2.67   data arrival time
+
+                  0.00   10.00   10.00   clock clk (rise edge)
+                          0.00   10.00   clock network delay (ideal)
+                         -0.25    9.75   clock uncertainty
+                          0.00    9.75   clock reconvergence pessimism
+                         -2.00    7.75   output external delay
+                                  7.75   data required time
+-----------------------------------------------------------------------------
+                                  7.75   data required time
+                                 -2.67   data arrival time
+-----------------------------------------------------------------------------
+                                  5.08   slack (MET)
+
+
+Startpoint: io_rdi_plLinkWidth[2] (input port clocked by clk)
+Endpoint: io_fdi_plLinkWidth[2] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          2.00    2.00 ^ input external delay
+                  0.03    0.02    2.02 ^ io_rdi_plLinkWidth[2] (in)
+     1    0.01                           io_rdi_plLinkWidth[2] (net)
+                  0.03    0.00    2.02 ^ input212/A (sky130_fd_sc_hd__buf_4)
+                  0.22    0.24    2.26 ^ input212/X (sky130_fd_sc_hd__buf_4)
+    17    0.08                           net212 (net)
+                  0.22    0.01    2.27 ^ _129057_/A (sky130_fd_sc_hd__clkbuf_1)
+                  0.04    0.12    2.39 ^ _129057_/X (sky130_fd_sc_hd__clkbuf_1)
+     1    0.00                           net325 (net)
+                  0.04    0.00    2.39 ^ output325/A (sky130_fd_sc_hd__buf_2)
+                  0.18    0.21    2.60 ^ output325/X (sky130_fd_sc_hd__buf_2)
+     1    0.03                           io_fdi_plLinkWidth[2] (net)
+                  0.18    0.00    2.60 ^ io_fdi_plLinkWidth[2] (out)
+                                  2.60   data arrival time
+
+                  0.00   10.00   10.00   clock clk (rise edge)
+                          0.00   10.00   clock network delay (ideal)
+                         -0.25    9.75   clock uncertainty
+                          0.00    9.75   clock reconvergence pessimism
+                         -2.00    7.75   output external delay
+                                  7.75   data required time
+-----------------------------------------------------------------------------
+                                  7.75   data required time
+                                 -2.60   data arrival time
+-----------------------------------------------------------------------------
+                                  5.15   slack (MET)
+
+
+max_report_end
+check_report
+
+===========================================================================
+report_checks -unconstrained
+============================================================================
+Startpoint: io_fdi_lpRxActiveStatus (input port clocked by clk)
+Endpoint: io_fdi_lpConfigCredit (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          2.00    2.00 v input external delay
+                  0.03    0.02    2.02 v io_fdi_lpRxActiveStatus (in)
+     1    0.01                           io_fdi_lpRxActiveStatus (net)
+                  0.03    0.00    2.02 v input102/A (sky130_fd_sc_hd__buf_8)
+                  0.08    0.16    2.18 v input102/X (sky130_fd_sc_hd__buf_8)
+     7    0.10                           net102 (net)
+                  0.09    0.02    2.20 v _056543_/B (sky130_fd_sc_hd__and3b_1)
+                  0.07    0.22    2.42 v _056543_/X (sky130_fd_sc_hd__and3b_1)
+     4    0.01                           _019446_ (net)
+                  0.07    0.00    2.42 v _056546_/A2 (sky130_fd_sc_hd__o21bai_1)
+                  0.16    0.18    2.60 ^ _056546_/Y (sky130_fd_sc_hd__o21bai_1)
+     2    0.01                           _019449_ (net)
+                  0.16    0.00    2.60 ^ _056547_/A2 (sky130_fd_sc_hd__a21oi_1)
+                  0.07    0.12    2.72 v _056547_/Y (sky130_fd_sc_hd__a21oi_1)
+     2    0.01                           _019450_ (net)
+                  0.07    0.00    2.72 v _056548_/B (sky130_fd_sc_hd__or2_1)
+                  0.08    0.27    2.99 v _056548_/X (sky130_fd_sc_hd__or2_1)
+     2    0.01                           _019451_ (net)
+                  0.08    0.00    2.99 v _056551_/B (sky130_fd_sc_hd__or3b_4)
+                  0.10    0.45    3.44 v _056551_/X (sky130_fd_sc_hd__or3b_4)
+     6    0.02                           _019454_ (net)
+                  0.10    0.00    3.44 v _056723_/A2 (sky130_fd_sc_hd__a211oi_4)
+                  0.53    0.55    4.00 ^ _056723_/Y (sky130_fd_sc_hd__a211oi_4)
+     6    0.05                           _019626_ (net)
+                  0.53    0.00    4.00 ^ _056726_/A1 (sky130_fd_sc_hd__a21o_2)
+                  0.15    0.31    4.31 ^ _056726_/X (sky130_fd_sc_hd__a21o_2)
+     6    0.03                           _019629_ (net)
+                  0.15    0.00    4.31 ^ _056727_/C (sky130_fd_sc_hd__and3_4)
+                  0.21    0.35    4.66 ^ _056727_/X (sky130_fd_sc_hd__and3_4)
+     5    0.07                           _019630_ (net)
+                  0.21    0.01    4.67 ^ _056728_/A (sky130_fd_sc_hd__clkbuf_1)
+                  0.05    0.12    4.79 ^ _056728_/X (sky130_fd_sc_hd__clkbuf_1)
+     1    0.00                           net222 (net)
+                  0.05    0.00    4.79 ^ output222/A (sky130_fd_sc_hd__buf_2)
+                  0.18    0.22    5.01 ^ output222/X (sky130_fd_sc_hd__buf_2)
+     1    0.03                           io_fdi_lpConfigCredit (net)
+                  0.18    0.00    5.01 ^ io_fdi_lpConfigCredit (out)
+                                  5.01   data arrival time
+
+                  0.00   10.00   10.00   clock clk (rise edge)
+                          0.00   10.00   clock network delay (ideal)
+                         -0.25    9.75   clock uncertainty
+                          0.00    9.75   clock reconvergence pessimism
+                         -2.00    7.75   output external delay
+                                  7.75   data required time
+-----------------------------------------------------------------------------
+                                  7.75   data required time
+                                 -5.01   data arrival time
+-----------------------------------------------------------------------------
+                                  2.74   slack (MET)
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+No paths found.
+check_report_end
+check_slew
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+max fanout
+
+Pin                                   Limit Fanout  Slack
+---------------------------------------------------------
+input164/X                               10    100    -90 (VIOLATED)
+input146/X                               10     99    -89 (VIOLATED)
+input148/X                               10     95    -85 (VIOLATED)
+input171/X                               10     95    -85 (VIOLATED)
+input192/X                               10     95    -85 (VIOLATED)
+input206/X                               10     95    -85 (VIOLATED)
+_109924_/X                               10     90    -80 (VIOLATED)
+input182/X                               10     83    -73 (VIOLATED)
+input156/X                               10     80    -70 (VIOLATED)
+input190/X                               10     74    -64 (VIOLATED)
+input177/X                               10     73    -63 (VIOLATED)
+input149/X                               10     71    -61 (VIOLATED)
+input155/X                               10     71    -61 (VIOLATED)
+input163/X                               10     71    -61 (VIOLATED)
+_071819_/X                               10     64    -54 (VIOLATED)
+input30/X                                10     63    -53 (VIOLATED)
+input31/X                                10     58    -48 (VIOLATED)
+_129056_/X                               10     57    -47 (VIOLATED)
+input189/X                               10     57    -47 (VIOLATED)
+input3/X                                 10     54    -44 (VIOLATED)
+_118549_/Q                               10     53    -43 (VIOLATED)
+input125/X                               10     52    -42 (VIOLATED)
+input15/X                                10     52    -42 (VIOLATED)
+_055419_/X                               10     49    -39 (VIOLATED)
+_055427_/X                               10     49    -39 (VIOLATED)
+_055440_/X                               10     49    -39 (VIOLATED)
+_118552_/Q                               10     49    -39 (VIOLATED)
+_118569_/Q                               10     49    -39 (VIOLATED)
+input197/X                               10     49    -39 (VIOLATED)
+_055362_/X                               10     48    -38 (VIOLATED)
+input14/X                                10     48    -38 (VIOLATED)
+_055411_/X                               10     47    -37 (VIOLATED)
+_055431_/X                               10     47    -37 (VIOLATED)
+_055436_/X                               10     47    -37 (VIOLATED)
+_055442_/X                               10     47    -37 (VIOLATED)
+_055496_/X                               10     47    -37 (VIOLATED)
+input157/X                               10     47    -37 (VIOLATED)
+input170/X                               10     47    -37 (VIOLATED)
+input174/X                               10     47    -37 (VIOLATED)
+input179/X                               10     47    -37 (VIOLATED)
+input187/X                               10     47    -37 (VIOLATED)
+input210/X                               10     47    -37 (VIOLATED)
+_055483_/X                               10     43    -33 (VIOLATED)
+input132/X                               10     43    -33 (VIOLATED)
+input123/X                               10     42    -32 (VIOLATED)
+input27/X                                10     42    -32 (VIOLATED)
+_116368_/Q                               10     41    -31 (VIOLATED)
+input154/X                               10     41    -31 (VIOLATED)
+input4/X                                 10     41    -31 (VIOLATED)
+input11/X                                10     40    -30 (VIOLATED)
+input113/X                               10     40    -30 (VIOLATED)
+input7/X                                 10     40    -30 (VIOLATED)
+_116427_/Q                               10     39    -29 (VIOLATED)
+input9/X                                 10     39    -29 (VIOLATED)
+_118545_/Q                               10     38    -28 (VIOLATED)
+_119588_/Q                               10     37    -27 (VIOLATED)
+input135/X                               10     36    -26 (VIOLATED)
+_055415_/X                               10     35    -25 (VIOLATED)
+_119575_/Q                               10     35    -25 (VIOLATED)
+input158/X                               10     35    -25 (VIOLATED)
+input28/X                                10     35    -25 (VIOLATED)
+_118548_/Q                               10     34    -24 (VIOLATED)
+input133/X                               10     34    -24 (VIOLATED)
+input136/X                               10     34    -24 (VIOLATED)
+input176/X                               10     34    -24 (VIOLATED)
+input185/X                               10     34    -24 (VIOLATED)
+_055347_/X                               10     33    -23 (VIOLATED)
+_055462_/X                               10     32    -22 (VIOLATED)
+input140/X                               10     32    -22 (VIOLATED)
+input33/X                                10     32    -22 (VIOLATED)
+input10/X                                10     31    -21 (VIOLATED)
+input17/X                                10     31    -21 (VIOLATED)
+_055425_/X                               10     30    -20 (VIOLATED)
+input120/X                               10     30    -20 (VIOLATED)
+input134/X                               10     30    -20 (VIOLATED)
+input8/X                                 10     30    -20 (VIOLATED)
+_116366_/Q                               10     29    -19 (VIOLATED)
+_116378_/Q                               10     29    -19 (VIOLATED)
+_118551_/Q                               10     29    -19 (VIOLATED)
+input32/X                                10     29    -19 (VIOLATED)
+_116398_/Q                               10     28    -18 (VIOLATED)
+input119/X                               10     28    -18 (VIOLATED)
+input25/X                                10     28    -18 (VIOLATED)
+_056038_/X                               10     27    -17 (VIOLATED)
+_119593_/Q                               10     27    -17 (VIOLATED)
+fanout444/X                              10     27    -17 (VIOLATED)
+input129/X                               10     27    -17 (VIOLATED)
+_055541_/X                               10     26    -16 (VIOLATED)
+_116375_/Q                               10     26    -16 (VIOLATED)
+_116381_/Q                               10     26    -16 (VIOLATED)
+_116390_/Q                               10     26    -16 (VIOLATED)
+_116392_/Q                               10     26    -16 (VIOLATED)
+_128647_/Q                               10     26    -16 (VIOLATED)
+_116391_/Q                               10     25    -15 (VIOLATED)
+input122/X                               10     25    -15 (VIOLATED)
+input13/X                                10     25    -15 (VIOLATED)
+input73/X                                10     25    -15 (VIOLATED)
+_055533_/X                               10     24    -14 (VIOLATED)
+_119573_/Q                               10     24    -14 (VIOLATED)
+input159/X                               10     24    -14 (VIOLATED)
+input168/X                               10     24    -14 (VIOLATED)
+_055429_/X                               10     23    -13 (VIOLATED)
+_055438_/X                               10     23    -13 (VIOLATED)
+_055490_/X                               10     23    -13 (VIOLATED)
+_116387_/Q                               10     23    -13 (VIOLATED)
+_116389_/Q                               10     23    -13 (VIOLATED)
+_116425_/Q                               10     23    -13 (VIOLATED)
+input112/X                               10     23    -13 (VIOLATED)
+input144/X                               10     23    -13 (VIOLATED)
+input161/X                               10     23    -13 (VIOLATED)
+input202/X                               10     23    -13 (VIOLATED)
+input100/X                               10     22    -12 (VIOLATED)
+input6/X                                 10     22    -12 (VIOLATED)
+_055341_/X                               10     21    -11 (VIOLATED)
+_055351_/X                               10     21    -11 (VIOLATED)
+_118562_/Q                               10     21    -11 (VIOLATED)
+input114/X                               10     21    -11 (VIOLATED)
+input116/X                               10     21    -11 (VIOLATED)
+input128/X                               10     21    -11 (VIOLATED)
+_055535_/X                               10     20    -10 (VIOLATED)
+_077580_/X                               10     20    -10 (VIOLATED)
+_055527_/X                               10     19     -9 (VIOLATED)
+_076576_/X                               10     19     -9 (VIOLATED)
+_106068_/X                               10     19     -9 (VIOLATED)
+input126/X                               10     19     -9 (VIOLATED)
+input127/X                               10     19     -9 (VIOLATED)
+input22/X                                10     19     -9 (VIOLATED)
+_071838_/X                               10     18     -8 (VIOLATED)
+_074581_/X                               10     18     -8 (VIOLATED)
+_093325_/Y                               10     18     -8 (VIOLATED)
+_103866_/Y                               10     18     -8 (VIOLATED)
+input131/X                               10     18     -8 (VIOLATED)
+_055539_/X                               10     17     -7 (VIOLATED)
+_057875_/Y                               10     17     -7 (VIOLATED)
+_072631_/Y                               10     17     -7 (VIOLATED)
+_073981_/Y                               10     17     -7 (VIOLATED)
+_074250_/Y                               10     17     -7 (VIOLATED)
+_074520_/Y                               10     17     -7 (VIOLATED)
+_074912_/Y                               10     17     -7 (VIOLATED)
+_082379_/X                               10     17     -7 (VIOLATED)
+_090673_/X                               10     17     -7 (VIOLATED)
+_093720_/Y                               10     17     -7 (VIOLATED)
+_094260_/Y                               10     17     -7 (VIOLATED)
+_099281_/X                               10     17     -7 (VIOLATED)
+_102516_/Y                               10     17     -7 (VIOLATED)
+_108503_/X                               10     17     -7 (VIOLATED)
+input18/X                                10     17     -7 (VIOLATED)
+input212/X                               10     17     -7 (VIOLATED)
+input24/X                                10     17     -7 (VIOLATED)
+_055506_/X                               10     16     -6 (VIOLATED)
+_062936_/X                               10     16     -6 (VIOLATED)
+_068595_/Y                               10     16     -6 (VIOLATED)
+_071548_/Y                               10     16     -6 (VIOLATED)
+_072040_/X                               10     16     -6 (VIOLATED)
+_072359_/Y                               10     16     -6 (VIOLATED)
+_073441_/Y                               10     16     -6 (VIOLATED)
+_074888_/X                               10     16     -6 (VIOLATED)
+_075181_/Y                               10     16     -6 (VIOLATED)
+_076699_/X                               10     16     -6 (VIOLATED)
+_082662_/X                               10     16     -6 (VIOLATED)
+_083206_/X                               10     16     -6 (VIOLATED)
+_083479_/X                               10     16     -6 (VIOLATED)
+_095385_/X                               10     16     -6 (VIOLATED)
+_096743_/X                               10     16     -6 (VIOLATED)
+_098493_/X                               10     16     -6 (VIOLATED)
+_100390_/X                               10     16     -6 (VIOLATED)
+_109585_/X                               10     16     -6 (VIOLATED)
+_118550_/Q                               10     16     -6 (VIOLATED)
+input2/X                                 10     16     -6 (VIOLATED)
+_057217_/X                               10     15     -5 (VIOLATED)
+_057444_/X                               10     15     -5 (VIOLATED)
+_061921_/Y                               10     15     -5 (VIOLATED)
+_062234_/X                               10     15     -5 (VIOLATED)
+_066964_/Y                               10     15     -5 (VIOLATED)
+_071880_/X                               10     15     -5 (VIOLATED)
+_071901_/X                               10     15     -5 (VIOLATED)
+_071998_/X                               10     15     -5 (VIOLATED)
+_072019_/X                               10     15     -5 (VIOLATED)
+_073710_/Y                               10     15     -5 (VIOLATED)
+_076658_/X                               10     15     -5 (VIOLATED)
+_076791_/X                               10     15     -5 (VIOLATED)
+_077555_/X                               10     15     -5 (VIOLATED)
+_078182_/X                               10     15     -5 (VIOLATED)
+_080084_/X                               10     15     -5 (VIOLATED)
+_082935_/X                               10     15     -5 (VIOLATED)
+_083731_/X                               10     15     -5 (VIOLATED)
+_083835_/X                               10     15     -5 (VIOLATED)
+_085399_/X                               10     15     -5 (VIOLATED)
+_091726_/X                               10     15     -5 (VIOLATED)
+_093056_/Y                               10     15     -5 (VIOLATED)
+_094529_/Y                               10     15     -5 (VIOLATED)
+_097940_/X                               10     15     -5 (VIOLATED)
+_099036_/X                               10     15     -5 (VIOLATED)
+_100662_/X                               10     15     -5 (VIOLATED)
+_102018_/X                               10     15     -5 (VIOLATED)
+_103370_/X                               10     15     -5 (VIOLATED)
+_103597_/Y                               10     15     -5 (VIOLATED)
+_104179_/X                               10     15     -5 (VIOLATED)
+_104946_/Y                               10     15     -5 (VIOLATED)
+_105485_/Y                               10     15     -5 (VIOLATED)
+_105754_/Y                               10     15     -5 (VIOLATED)
+_106339_/X                               10     15     -5 (VIOLATED)
+_107958_/X                               10     15     -5 (VIOLATED)
+input23/X                                10     15     -5 (VIOLATED)
+_055395_/X                               10     14     -4 (VIOLATED)
+_055890_/X                               10     14     -4 (VIOLATED)
+_055898_/X                               10     14     -4 (VIOLATED)
+_060877_/X                               10     14     -4 (VIOLATED)
+_061423_/X                               10     14     -4 (VIOLATED)
+_064249_/X                               10     14     -4 (VIOLATED)
+_065546_/X                               10     14     -4 (VIOLATED)
+_070325_/X                               10     14     -4 (VIOLATED)
+_071817_/X                               10     14     -4 (VIOLATED)
+_072900_/Y                               10     14     -4 (VIOLATED)
+_075992_/Y                               10     14     -4 (VIOLATED)
+_076793_/X                               10     14     -4 (VIOLATED)
+_076814_/X                               10     14     -4 (VIOLATED)
+_076834_/X                               10     14     -4 (VIOLATED)
+_077570_/X                               10     14     -4 (VIOLATED)
+_078185_/X                               10     14     -4 (VIOLATED)
+_078223_/X                               10     14     -4 (VIOLATED)
+_079953_/X                               10     14     -4 (VIOLATED)
+_080227_/X                               10     14     -4 (VIOLATED)
+_080596_/X                               10     14     -4 (VIOLATED)
+_081722_/X                               10     14     -4 (VIOLATED)
+_082005_/X                               10     14     -4 (VIOLATED)
+_084101_/X                               10     14     -4 (VIOLATED)
+_091130_/Y                               10     14     -4 (VIOLATED)
+_092013_/X                               10     14     -4 (VIOLATED)
+_092782_/Y                               10     14     -4 (VIOLATED)
+_093989_/Y                               10     14     -4 (VIOLATED)
+_094798_/Y                               10     14     -4 (VIOLATED)
+_096199_/X                               10     14     -4 (VIOLATED)
+_097555_/X                               10     14     -4 (VIOLATED)
+_098764_/X                               10     14     -4 (VIOLATED)
+_103057_/Y                               10     14     -4 (VIOLATED)
+_104406_/Y                               10     14     -4 (VIOLATED)
+_108774_/X                               10     14     -4 (VIOLATED)
+_109001_/Y                               10     14     -4 (VIOLATED)
+_116407_/Q                               10     14     -4 (VIOLATED)
+_118544_/Q                               10     14     -4 (VIOLATED)
+input117/X                               10     14     -4 (VIOLATED)
+_055494_/X                               10     13     -3 (VIOLATED)
+_055525_/X                               10     13     -3 (VIOLATED)
+_055531_/X                               10     13     -3 (VIOLATED)
+_055953_/X                               10     13     -3 (VIOLATED)
+_056260_/X                               10     13     -3 (VIOLATED)
+_056810_/X                               10     13     -3 (VIOLATED)
+_056982_/X                               10     13     -3 (VIOLATED)
+_057926_/X                               10     13     -3 (VIOLATED)
+_057935_/X                               10     13     -3 (VIOLATED)
+_057951_/X                               10     13     -3 (VIOLATED)
+_057966_/X                               10     13     -3 (VIOLATED)
+_058233_/X                               10     13     -3 (VIOLATED)
+_058451_/X                               10     13     -3 (VIOLATED)
+_058863_/X                               10     13     -3 (VIOLATED)
+_060606_/X                               10     13     -3 (VIOLATED)
+_062798_/X                               10     13     -3 (VIOLATED)
+_062843_/X                               10     13     -3 (VIOLATED)
+_063399_/X                               10     13     -3 (VIOLATED)
+_065270_/X                               10     13     -3 (VIOLATED)
+_067366_/Y                               10     13     -3 (VIOLATED)
+_069519_/Y                               10     13     -3 (VIOLATED)
+_069790_/Y                               10     13     -3 (VIOLATED)
+_071922_/X                               10     13     -3 (VIOLATED)
+_072061_/X                               10     13     -3 (VIOLATED)
+_073170_/Y                               10     13     -3 (VIOLATED)
+_074538_/X                               10     13     -3 (VIOLATED)
+_074547_/X                               10     13     -3 (VIOLATED)
+_074550_/X                               10     13     -3 (VIOLATED)
+_074619_/X                               10     13     -3 (VIOLATED)
+_074851_/X                               10     13     -3 (VIOLATED)
+_074882_/X                               10     13     -3 (VIOLATED)
+_075720_/Y                               10     13     -3 (VIOLATED)
+_076279_/X                               10     13     -3 (VIOLATED)
+_076560_/X                               10     13     -3 (VIOLATED)
+_076569_/X                               10     13     -3 (VIOLATED)
+_076623_/X                               10     13     -3 (VIOLATED)
+_076810_/X                               10     13     -3 (VIOLATED)
+_076819_/X                               10     13     -3 (VIOLATED)
+_077057_/X                               10     13     -3 (VIOLATED)
+_077074_/X                               10     13     -3 (VIOLATED)
+_077856_/X                               10     13     -3 (VIOLATED)
+_079091_/X                               10     13     -3 (VIOLATED)
+_079175_/X                               10     13     -3 (VIOLATED)
+_079288_/X                               10     13     -3 (VIOLATED)
+_079917_/X                               10     13     -3 (VIOLATED)
+_080149_/X                               10     13     -3 (VIOLATED)
+_080192_/X                               10     13     -3 (VIOLATED)
+_080220_/X                               10     13     -3 (VIOLATED)
+_083728_/X                               10     13     -3 (VIOLATED)
+_083769_/X                               10     13     -3 (VIOLATED)
+_083856_/X                               10     13     -3 (VIOLATED)
+_083875_/X                               10     13     -3 (VIOLATED)
+_083899_/X                               10     13     -3 (VIOLATED)
+_083901_/X                               10     13     -3 (VIOLATED)
+_084573_/X                               10     13     -3 (VIOLATED)
+_084597_/X                               10     13     -3 (VIOLATED)
+_084602_/X                               10     13     -3 (VIOLATED)
+_084608_/X                               10     13     -3 (VIOLATED)
+_084619_/X                               10     13     -3 (VIOLATED)
+_084633_/X                               10     13     -3 (VIOLATED)
+_084866_/X                               10     13     -3 (VIOLATED)
+_085429_/X                               10     13     -3 (VIOLATED)
+_086796_/X                               10     13     -3 (VIOLATED)
+_087221_/X                               10     13     -3 (VIOLATED)
+_087222_/X                               10     13     -3 (VIOLATED)
+_087931_/X                               10     13     -3 (VIOLATED)
+_090578_/Y                               10     13     -3 (VIOLATED)
+_092284_/X                               10     13     -3 (VIOLATED)
+_096471_/X                               10     13     -3 (VIOLATED)
+_099577_/X                               10     13     -3 (VIOLATED)
+_101747_/X                               10     13     -3 (VIOLATED)
+_102289_/X                               10     13     -3 (VIOLATED)
+_102829_/X                               10     13     -3 (VIOLATED)
+_108232_/X                               10     13     -3 (VIOLATED)
+_118571_/Q                               10     13     -3 (VIOLATED)
+input12/X                                10     13     -3 (VIOLATED)
+input139/X                               10     13     -3 (VIOLATED)
+input141/X                               10     13     -3 (VIOLATED)
+input203/X                               10     13     -3 (VIOLATED)
+_055383_/X                               10     12     -2 (VIOLATED)
+_055692_/X                               10     12     -2 (VIOLATED)
+_056040_/X                               10     12     -2 (VIOLATED)
+_056088_/X                               10     12     -2 (VIOLATED)
+_056113_/X                               10     12     -2 (VIOLATED)
+_056115_/X                               10     12     -2 (VIOLATED)
+_056200_/X                               10     12     -2 (VIOLATED)
+_056210_/X                               10     12     -2 (VIOLATED)
+_056275_/X                               10     12     -2 (VIOLATED)
+_056498_/X                               10     12     -2 (VIOLATED)
+_056591_/X                               10     12     -2 (VIOLATED)
+_056594_/X                               10     12     -2 (VIOLATED)
+_056988_/X                               10     12     -2 (VIOLATED)
+_057019_/X                               10     12     -2 (VIOLATED)
+_057028_/X                               10     12     -2 (VIOLATED)
+_057037_/X                               10     12     -2 (VIOLATED)
+_057056_/X                               10     12     -2 (VIOLATED)
+_057469_/Y                               10     12     -2 (VIOLATED)
+_057701_/X                               10     12     -2 (VIOLATED)
+_057901_/X                               10     12     -2 (VIOLATED)
+_057917_/X                               10     12     -2 (VIOLATED)
+_057973_/X                               10     12     -2 (VIOLATED)
+_058044_/X                               10     12     -2 (VIOLATED)
+_058059_/X                               10     12     -2 (VIOLATED)
+_058128_/X                               10     12     -2 (VIOLATED)
+_058140_/X                               10     12     -2 (VIOLATED)
+_058190_/X                               10     12     -2 (VIOLATED)
+_058211_/X                               10     12     -2 (VIOLATED)
+_058280_/X                               10     12     -2 (VIOLATED)
+_058375_/X                               10     12     -2 (VIOLATED)
+_060564_/X                               10     12     -2 (VIOLATED)
+_062533_/X                               10     12     -2 (VIOLATED)
+_062544_/X                               10     12     -2 (VIOLATED)
+_062732_/X                               10     12     -2 (VIOLATED)
+_062769_/X                               10     12     -2 (VIOLATED)
+_062835_/X                               10     12     -2 (VIOLATED)
+_062974_/X                               10     12     -2 (VIOLATED)
+_064214_/X                               10     12     -2 (VIOLATED)
+_064258_/X                               10     12     -2 (VIOLATED)
+_064347_/X                               10     12     -2 (VIOLATED)
+_065000_/X                               10     12     -2 (VIOLATED)
+_065577_/Y                               10     12     -2 (VIOLATED)
+_066316_/X                               10     12     -2 (VIOLATED)
+_066322_/X                               10     12     -2 (VIOLATED)
+_067236_/X                               10     12     -2 (VIOLATED)
+_067238_/X                               10     12     -2 (VIOLATED)
+_068305_/X                               10     12     -2 (VIOLATED)
+_068885_/X                               10     12     -2 (VIOLATED)
+_069229_/Y                               10     12     -2 (VIOLATED)
+_070220_/X                               10     12     -2 (VIOLATED)
+_070247_/X                               10     12     -2 (VIOLATED)
+_070251_/X                               10     12     -2 (VIOLATED)
+_070301_/X                               10     12     -2 (VIOLATED)
+_070321_/X                               10     12     -2 (VIOLATED)
+_070884_/Y                               10     12     -2 (VIOLATED)
+_071026_/X                               10     12     -2 (VIOLATED)
+_071859_/X                               10     12     -2 (VIOLATED)
+_072090_/Y                               10     12     -2 (VIOLATED)
+_074532_/X                               10     12     -2 (VIOLATED)
+_074544_/X                               10     12     -2 (VIOLATED)
+_074578_/X                               10     12     -2 (VIOLATED)
+_074609_/X                               10     12     -2 (VIOLATED)
+_074792_/X                               10     12     -2 (VIOLATED)
+_074826_/X                               10     12     -2 (VIOLATED)
+_075451_/Y                               10     12     -2 (VIOLATED)
+_076530_/Y                               10     12     -2 (VIOLATED)
+_076543_/X                               10     12     -2 (VIOLATED)
+_076592_/X                               10     12     -2 (VIOLATED)
+_076602_/X                               10     12     -2 (VIOLATED)
+_076679_/X                               10     12     -2 (VIOLATED)
+_076690_/X                               10     12     -2 (VIOLATED)
+_076716_/X                               10     12     -2 (VIOLATED)
+_076778_/X                               10     12     -2 (VIOLATED)
+_076804_/X                               10     12     -2 (VIOLATED)
+_076821_/X                               10     12     -2 (VIOLATED)
+_076825_/X                               10     12     -2 (VIOLATED)
+_076832_/X                               10     12     -2 (VIOLATED)
+_077046_/X                               10     12     -2 (VIOLATED)
+_077052_/X                               10     12     -2 (VIOLATED)
+_077054_/X                               10     12     -2 (VIOLATED)
+_077082_/X                               10     12     -2 (VIOLATED)
+_077089_/X                               10     12     -2 (VIOLATED)
+_077192_/X                               10     12     -2 (VIOLATED)
+_077550_/X                               10     12     -2 (VIOLATED)
+_077557_/X                               10     12     -2 (VIOLATED)
+_077579_/X                               10     12     -2 (VIOLATED)
+_077581_/X                               10     12     -2 (VIOLATED)
+_077585_/X                               10     12     -2 (VIOLATED)
+_077723_/X                               10     12     -2 (VIOLATED)
+_077739_/X                               10     12     -2 (VIOLATED)
+_078109_/X                               10     12     -2 (VIOLATED)
+_078198_/X                               10     12     -2 (VIOLATED)
+_078976_/X                               10     12     -2 (VIOLATED)
+_079898_/X                               10     12     -2 (VIOLATED)
+_079935_/X                               10     12     -2 (VIOLATED)
+_079944_/X                               10     12     -2 (VIOLATED)
+_079954_/X                               10     12     -2 (VIOLATED)
+_079991_/X                               10     12     -2 (VIOLATED)
+_079996_/X                               10     12     -2 (VIOLATED)
+_080015_/X                               10     12     -2 (VIOLATED)
+_080024_/X                               10     12     -2 (VIOLATED)
+_080054_/X                               10     12     -2 (VIOLATED)
+_080055_/X                               10     12     -2 (VIOLATED)
+_080173_/X                               10     12     -2 (VIOLATED)
+_080188_/X                               10     12     -2 (VIOLATED)
+_080201_/X                               10     12     -2 (VIOLATED)
+_080210_/X                               10     12     -2 (VIOLATED)
+_080212_/X                               10     12     -2 (VIOLATED)
+_080308_/X                               10     12     -2 (VIOLATED)
+_080569_/X                               10     12     -2 (VIOLATED)
+_080611_/X                               10     12     -2 (VIOLATED)
+_080627_/X                               10     12     -2 (VIOLATED)
+_082242_/X                               10     12     -2 (VIOLATED)
+_083730_/X                               10     12     -2 (VIOLATED)
+_083744_/X                               10     12     -2 (VIOLATED)
+_083757_/X                               10     12     -2 (VIOLATED)
+_083766_/X                               10     12     -2 (VIOLATED)
+_083798_/X                               10     12     -2 (VIOLATED)
+_083812_/X                               10     12     -2 (VIOLATED)
+_083826_/X                               10     12     -2 (VIOLATED)
+_083857_/X                               10     12     -2 (VIOLATED)
+_083881_/X                               10     12     -2 (VIOLATED)
+_083887_/X                               10     12     -2 (VIOLATED)
+_083888_/X                               10     12     -2 (VIOLATED)
+_084192_/X                               10     12     -2 (VIOLATED)
+_084539_/X                               10     12     -2 (VIOLATED)
+_084547_/X                               10     12     -2 (VIOLATED)
+_084551_/X                               10     12     -2 (VIOLATED)
+_084576_/X                               10     12     -2 (VIOLATED)
+_084588_/X                               10     12     -2 (VIOLATED)
+_084591_/X                               10     12     -2 (VIOLATED)
+_084601_/X                               10     12     -2 (VIOLATED)
+_084605_/X                               10     12     -2 (VIOLATED)
+_084622_/X                               10     12     -2 (VIOLATED)
+_085402_/X                               10     12     -2 (VIOLATED)
+_085431_/X                               10     12     -2 (VIOLATED)
+_085440_/X                               10     12     -2 (VIOLATED)
+_086315_/X                               10     12     -2 (VIOLATED)
+_086347_/X                               10     12     -2 (VIOLATED)
+_086593_/X                               10     12     -2 (VIOLATED)
+_086760_/X                               10     12     -2 (VIOLATED)
+_086767_/X                               10     12     -2 (VIOLATED)
+_086788_/X                               10     12     -2 (VIOLATED)
+_086862_/X                               10     12     -2 (VIOLATED)
+_086942_/X                               10     12     -2 (VIOLATED)
+_086945_/X                               10     12     -2 (VIOLATED)
+_086995_/X                               10     12     -2 (VIOLATED)
+_087008_/X                               10     12     -2 (VIOLATED)
+_088733_/X                               10     12     -2 (VIOLATED)
+_093786_/X                               10     12     -2 (VIOLATED)
+_094326_/X                               10     12     -2 (VIOLATED)
+_095069_/X                               10     12     -2 (VIOLATED)
+_095656_/X                               10     12     -2 (VIOLATED)
+_096970_/Y                               10     12     -2 (VIOLATED)
+_098179_/Y                               10     12     -2 (VIOLATED)
+_100119_/X                               10     12     -2 (VIOLATED)
+_101204_/X                               10     12     -2 (VIOLATED)
+_101475_/X                               10     12     -2 (VIOLATED)
+_104719_/X                               10     12     -2 (VIOLATED)
+_105216_/Y                               10     12     -2 (VIOLATED)
+_105551_/X                               10     12     -2 (VIOLATED)
+_106297_/X                               10     12     -2 (VIOLATED)
+_107816_/X                               10     12     -2 (VIOLATED)
+_110599_/X                               10     12     -2 (VIOLATED)
+_110662_/X                               10     12     -2 (VIOLATED)
+_128634_/Q                               10     12     -2 (VIOLATED)
+input138/X                               10     12     -2 (VIOLATED)
+input195/X                               10     12     -2 (VIOLATED)
+max_cap441/X                             10     12     -2 (VIOLATED)
+_055384_/X                               10     11        (VIOLATED)
+_055410_/X                               10     11        (VIOLATED)
+_055484_/X                               10     11        (VIOLATED)
+_055500_/X                               10     11        (VIOLATED)
+_055630_/X                               10     11        (VIOLATED)
+_055888_/X                               10     11        (VIOLATED)
+_056036_/X                               10     11        (VIOLATED)
+_056092_/X                               10     11        (VIOLATED)
+_056095_/X                               10     11        (VIOLATED)
+_056105_/X                               10     11        (VIOLATED)
+_056119_/X                               10     11        (VIOLATED)
+_056136_/X                               10     11        (VIOLATED)
+_056144_/X                               10     11        (VIOLATED)
+_056155_/X                               10     11        (VIOLATED)
+_056171_/X                               10     11        (VIOLATED)
+_056199_/X                               10     11        (VIOLATED)
+_056226_/X                               10     11        (VIOLATED)
+_056230_/X                               10     11        (VIOLATED)
+_056248_/X                               10     11        (VIOLATED)
+_056252_/X                               10     11        (VIOLATED)
+_056253_/X                               10     11        (VIOLATED)
+_056290_/X                               10     11        (VIOLATED)
+_056320_/X                               10     11        (VIOLATED)
+_056384_/X                               10     11        (VIOLATED)
+_056393_/X                               10     11        (VIOLATED)
+_056424_/X                               10     11        (VIOLATED)
+_056450_/X                               10     11        (VIOLATED)
+_056475_/X                               10     11        (VIOLATED)
+_056496_/X                               10     11        (VIOLATED)
+_056503_/X                               10     11        (VIOLATED)
+_056595_/X                               10     11        (VIOLATED)
+_056619_/X                               10     11        (VIOLATED)
+_056620_/X                               10     11        (VIOLATED)
+_056622_/X                               10     11        (VIOLATED)
+_056783_/X                               10     11        (VIOLATED)
+_056963_/X                               10     11        (VIOLATED)
+_056966_/X                               10     11        (VIOLATED)
+_056969_/X                               10     11        (VIOLATED)
+_056991_/X                               10     11        (VIOLATED)
+_057174_/X                               10     11        (VIOLATED)
+_057365_/X                               10     11        (VIOLATED)
+_057490_/X                               10     11        (VIOLATED)
+_057577_/X                               10     11        (VIOLATED)
+_057614_/X                               10     11        (VIOLATED)
+_057651_/X                               10     11        (VIOLATED)
+_057682_/X                               10     11        (VIOLATED)
+_057689_/X                               10     11        (VIOLATED)
+_057692_/X                               10     11        (VIOLATED)
+_057698_/X                               10     11        (VIOLATED)
+_057813_/X                               10     11        (VIOLATED)
+_057846_/X                               10     11        (VIOLATED)
+_057861_/X                               10     11        (VIOLATED)
+_057892_/X                               10     11        (VIOLATED)
+_057904_/X                               10     11        (VIOLATED)
+_057911_/X                               10     11        (VIOLATED)
+_057923_/X                               10     11        (VIOLATED)
+_057932_/X                               10     11        (VIOLATED)
+_057942_/X                               10     11        (VIOLATED)
+_057945_/X                               10     11        (VIOLATED)
+_057957_/X                               10     11        (VIOLATED)
+_057969_/X                               10     11        (VIOLATED)
+_058007_/X                               10     11        (VIOLATED)
+_058047_/X                               10     11        (VIOLATED)
+_058053_/X                               10     11        (VIOLATED)
+_058069_/X                               10     11        (VIOLATED)
+_058121_/X                               10     11        (VIOLATED)
+_058152_/X                               10     11        (VIOLATED)
+_058186_/X                               10     11        (VIOLATED)
+_058196_/X                               10     11        (VIOLATED)
+_058208_/X                               10     11        (VIOLATED)
+_058217_/X                               10     11        (VIOLATED)
+_058221_/X                               10     11        (VIOLATED)
+_058224_/X                               10     11        (VIOLATED)
+_058306_/X                               10     11        (VIOLATED)
+_058336_/X                               10     11        (VIOLATED)
+_058346_/X                               10     11        (VIOLATED)
+_058387_/X                               10     11        (VIOLATED)
+_058433_/X                               10     11        (VIOLATED)
+_058445_/X                               10     11        (VIOLATED)
+_058834_/X                               10     11        (VIOLATED)
+_058851_/X                               10     11        (VIOLATED)
+_058891_/X                               10     11        (VIOLATED)
+_059984_/Y                               10     11        (VIOLATED)
+_060290_/Y                               10     11        (VIOLATED)
+_060563_/X                               10     11        (VIOLATED)
+_061025_/X                               10     11        (VIOLATED)
+_061109_/X                               10     11        (VIOLATED)
+_061278_/X                               10     11        (VIOLATED)
+_061299_/X                               10     11        (VIOLATED)
+_062134_/X                               10     11        (VIOLATED)
+_062192_/X                               10     11        (VIOLATED)
+_062467_/Y                               10     11        (VIOLATED)
+_062618_/X                               10     11        (VIOLATED)
+_062622_/X                               10     11        (VIOLATED)
+_062626_/X                               10     11        (VIOLATED)
+_062642_/X                               10     11        (VIOLATED)
+_062646_/X                               10     11        (VIOLATED)
+_062650_/X                               10     11        (VIOLATED)
+_062667_/X                               10     11        (VIOLATED)
+_062679_/X                               10     11        (VIOLATED)
+_062683_/X                               10     11        (VIOLATED)
+_062687_/X                               10     11        (VIOLATED)
+_062691_/X                               10     11        (VIOLATED)
+_062695_/X                               10     11        (VIOLATED)
+_062708_/X                               10     11        (VIOLATED)
+_062712_/X                               10     11        (VIOLATED)
+_062741_/X                               10     11        (VIOLATED)
+_062765_/X                               10     11        (VIOLATED)
+_062814_/X                               10     11        (VIOLATED)
+_062847_/X                               10     11        (VIOLATED)
+_062851_/X                               10     11        (VIOLATED)
+_062859_/X                               10     11        (VIOLATED)
+_062876_/X                               10     11        (VIOLATED)
+_062880_/X                               10     11        (VIOLATED)
+_062884_/X                               10     11        (VIOLATED)
+_062888_/X                               10     11        (VIOLATED)
+_062892_/X                               10     11        (VIOLATED)
+_062896_/X                               10     11        (VIOLATED)
+_063081_/Y                               10     11        (VIOLATED)
+_063357_/X                               10     11        (VIOLATED)
+_063629_/Y                               10     11        (VIOLATED)
+_063630_/X                               10     11        (VIOLATED)
+_063983_/X                               10     11        (VIOLATED)
+_064032_/X                               10     11        (VIOLATED)
+_064122_/X                               10     11        (VIOLATED)
+_064135_/X                               10     11        (VIOLATED)
+_064136_/X                               10     11        (VIOLATED)
+_064156_/X                               10     11        (VIOLATED)
+_064193_/X                               10     11        (VIOLATED)
+_064197_/X                               10     11        (VIOLATED)
+_064221_/X                               10     11        (VIOLATED)
+_064222_/X                               10     11        (VIOLATED)
+_064225_/X                               10     11        (VIOLATED)
+_064242_/X                               10     11        (VIOLATED)
+_064254_/X                               10     11        (VIOLATED)
+_064324_/X                               10     11        (VIOLATED)
+_064327_/X                               10     11        (VIOLATED)
+_064328_/X                               10     11        (VIOLATED)
+_064339_/X                               10     11        (VIOLATED)
+_064340_/X                               10     11        (VIOLATED)
+_064351_/X                               10     11        (VIOLATED)
+_064355_/X                               10     11        (VIOLATED)
+_064410_/X                               10     11        (VIOLATED)
+_064430_/X                               10     11        (VIOLATED)
+_064685_/X                               10     11        (VIOLATED)
+_064975_/X                               10     11        (VIOLATED)
+_066125_/X                               10     11        (VIOLATED)
+_066168_/X                               10     11        (VIOLATED)
+_066251_/X                               10     11        (VIOLATED)
+_066425_/Y                               10     11        (VIOLATED)
+_066965_/X                               10     11        (VIOLATED)
+_067367_/X                               10     11        (VIOLATED)
+_067760_/X                               10     11        (VIOLATED)
+_067802_/X                               10     11        (VIOLATED)
+_068029_/Y                               10     11        (VIOLATED)
+_068323_/Y                               10     11        (VIOLATED)
+_068879_/X                               10     11        (VIOLATED)
+_068960_/Y                               10     11        (VIOLATED)
+_070062_/X                               10     11        (VIOLATED)
+_070063_/X                               10     11        (VIOLATED)
+_070151_/X                               10     11        (VIOLATED)
+_070231_/X                               10     11        (VIOLATED)
+_070243_/X                               10     11        (VIOLATED)
+_070256_/X                               10     11        (VIOLATED)
+_070268_/X                               10     11        (VIOLATED)
+_070272_/X                               10     11        (VIOLATED)
+_070292_/X                               10     11        (VIOLATED)
+_070317_/X                               10     11        (VIOLATED)
+_070329_/X                               10     11        (VIOLATED)
+_070338_/X                               10     11        (VIOLATED)
+_070347_/X                               10     11        (VIOLATED)
+_070616_/X                               10     11        (VIOLATED)
+_070918_/X                               10     11        (VIOLATED)
+_070921_/X                               10     11        (VIOLATED)
+_070924_/X                               10     11        (VIOLATED)
+_070927_/X                               10     11        (VIOLATED)
+_070936_/X                               10     11        (VIOLATED)
+_071023_/X                               10     11        (VIOLATED)
+_071029_/X                               10     11        (VIOLATED)
+_071045_/X                               10     11        (VIOLATED)
+_071066_/X                               10     11        (VIOLATED)
+_071069_/X                               10     11        (VIOLATED)
+_071073_/X                               10     11        (VIOLATED)
+_071085_/X                               10     11        (VIOLATED)
+_071091_/X                               10     11        (VIOLATED)
+_071100_/X                               10     11        (VIOLATED)
+_071110_/X                               10     11        (VIOLATED)
+_071178_/X                               10     11        (VIOLATED)
+_071187_/X                               10     11        (VIOLATED)
+_071206_/X                               10     11        (VIOLATED)
+_071237_/X                               10     11        (VIOLATED)
+_071267_/X                               10     11        (VIOLATED)
+_071270_/X                               10     11        (VIOLATED)
+_071273_/X                               10     11        (VIOLATED)
+_071276_/Y                               10     11        (VIOLATED)
+_071614_/X                               10     11        (VIOLATED)
+_071740_/X                               10     11        (VIOLATED)
+_071955_/Y                               10     11        (VIOLATED)
+_072091_/X                               10     11        (VIOLATED)
+_072697_/X                               10     11        (VIOLATED)
+_073633_/X                               10     11        (VIOLATED)
+_074251_/X                               10     11        (VIOLATED)
+_074521_/X                               10     11        (VIOLATED)
+_074554_/X                               10     11        (VIOLATED)
+_074560_/X                               10     11        (VIOLATED)
+_074563_/X                               10     11        (VIOLATED)
+_074569_/X                               10     11        (VIOLATED)
+_074603_/X                               10     11        (VIOLATED)
+_074612_/X                               10     11        (VIOLATED)
+_074643_/X                               10     11        (VIOLATED)
+_074656_/X                               10     11        (VIOLATED)
+_074665_/X                               10     11        (VIOLATED)
+_074690_/X                               10     11        (VIOLATED)
+_074693_/X                               10     11        (VIOLATED)
+_074702_/X                               10     11        (VIOLATED)
+_074780_/X                               10     11        (VIOLATED)
+_074786_/X                               10     11        (VIOLATED)
+_074799_/X                               10     11        (VIOLATED)
+_074860_/X                               10     11        (VIOLATED)
+_074867_/X                               10     11        (VIOLATED)
+_074876_/X                               10     11        (VIOLATED)
+_074879_/X                               10     11        (VIOLATED)
+_075247_/X                               10     11        (VIOLATED)
+_075728_/X                               10     11        (VIOLATED)
+_075787_/X                               10     11        (VIOLATED)
+_076559_/X                               10     11        (VIOLATED)
+_076574_/X                               10     11        (VIOLATED)
+_076606_/X                               10     11        (VIOLATED)
+_076626_/X                               10     11        (VIOLATED)
+_076653_/X                               10     11        (VIOLATED)
+_076657_/X                               10     11        (VIOLATED)
+_076678_/X                               10     11        (VIOLATED)
+_076688_/X                               10     11        (VIOLATED)
+_076696_/X                               10     11        (VIOLATED)
+_076698_/X                               10     11        (VIOLATED)
+_076703_/X                               10     11        (VIOLATED)
+_076715_/X                               10     11        (VIOLATED)
+_076769_/X                               10     11        (VIOLATED)
+_076775_/X                               10     11        (VIOLATED)
+_076792_/X                               10     11        (VIOLATED)
+_076796_/X                               10     11        (VIOLATED)
+_076798_/X                               10     11        (VIOLATED)
+_076800_/X                               10     11        (VIOLATED)
+_076801_/X                               10     11        (VIOLATED)
+_076808_/X                               10     11        (VIOLATED)
+_077036_/X                               10     11        (VIOLATED)
+_077045_/X                               10     11        (VIOLATED)
+_077050_/X                               10     11        (VIOLATED)
+_077056_/X                               10     11        (VIOLATED)
+_077065_/X                               10     11        (VIOLATED)
+_077068_/X                               10     11        (VIOLATED)
+_077071_/X                               10     11        (VIOLATED)
+_077091_/X                               10     11        (VIOLATED)
+_077157_/X                               10     11        (VIOLATED)
+_077184_/X                               10     11        (VIOLATED)
+_077234_/X                               10     11        (VIOLATED)
+_077373_/X                               10     11        (VIOLATED)
+_077382_/X                               10     11        (VIOLATED)
+_077489_/X                               10     11        (VIOLATED)
+_077553_/X                               10     11        (VIOLATED)
+_077558_/X                               10     11        (VIOLATED)
+_077564_/X                               10     11        (VIOLATED)
+_077569_/X                               10     11        (VIOLATED)
+_077576_/X                               10     11        (VIOLATED)
+_077615_/X                               10     11        (VIOLATED)
+_077640_/X                               10     11        (VIOLATED)
+_077716_/X                               10     11        (VIOLATED)
+_077730_/X                               10     11        (VIOLATED)
+_077791_/X                               10     11        (VIOLATED)
+_078172_/X                               10     11        (VIOLATED)
+_078659_/X                               10     11        (VIOLATED)
+_078835_/X                               10     11        (VIOLATED)
+_078894_/X                               10     11        (VIOLATED)
+_078907_/X                               10     11        (VIOLATED)
+_078909_/X                               10     11        (VIOLATED)
+_078989_/X                               10     11        (VIOLATED)
+_079095_/X                               10     11        (VIOLATED)
+_079885_/X                               10     11        (VIOLATED)
+_079887_/X                               10     11        (VIOLATED)
+_079889_/X                               10     11        (VIOLATED)
+_079894_/X                               10     11        (VIOLATED)
+_079909_/X                               10     11        (VIOLATED)
+_079913_/X                               10     11        (VIOLATED)
+_079928_/X                               10     11        (VIOLATED)
+_079931_/X                               10     11        (VIOLATED)
+_079938_/X                               10     11        (VIOLATED)
+_079947_/X                               10     11        (VIOLATED)
+_079948_/X                               10     11        (VIOLATED)
+_079949_/X                               10     11        (VIOLATED)
+_079950_/X                               10     11        (VIOLATED)
+_079975_/X                               10     11        (VIOLATED)
+_079980_/X                               10     11        (VIOLATED)
+_079982_/X                               10     11        (VIOLATED)
+_079985_/X                               10     11        (VIOLATED)
+_079986_/X                               10     11        (VIOLATED)
+_079987_/X                               10     11        (VIOLATED)
+_080011_/X                               10     11        (VIOLATED)
+_080012_/X                               10     11        (VIOLATED)
+_080016_/X                               10     11        (VIOLATED)
+_080028_/X                               10     11        (VIOLATED)
+_080034_/X                               10     11        (VIOLATED)
+_080036_/X                               10     11        (VIOLATED)
+_080037_/X                               10     11        (VIOLATED)
+_080043_/X                               10     11        (VIOLATED)
+_080047_/X                               10     11        (VIOLATED)
+_080048_/X                               10     11        (VIOLATED)
+_080049_/X                               10     11        (VIOLATED)
+_080061_/X                               10     11        (VIOLATED)
+_080063_/X                               10     11        (VIOLATED)
+_080070_/X                               10     11        (VIOLATED)
+_080079_/X                               10     11        (VIOLATED)
+_080086_/X                               10     11        (VIOLATED)
+_080102_/X                               10     11        (VIOLATED)
+_080161_/X                               10     11        (VIOLATED)
+_080177_/X                               10     11        (VIOLATED)
+_080187_/X                               10     11        (VIOLATED)
+_080198_/X                               10     11        (VIOLATED)
+_080209_/X                               10     11        (VIOLATED)
+_080221_/X                               10     11        (VIOLATED)
+_080266_/X                               10     11        (VIOLATED)
+_080269_/X                               10     11        (VIOLATED)
+_080371_/X                               10     11        (VIOLATED)
+_080382_/X                               10     11        (VIOLATED)
+_080428_/X                               10     11        (VIOLATED)
+_080461_/X                               10     11        (VIOLATED)
+_080579_/X                               10     11        (VIOLATED)
+_080580_/X                               10     11        (VIOLATED)
+_080626_/X                               10     11        (VIOLATED)
+_080830_/X                               10     11        (VIOLATED)
+_081114_/X                               10     11        (VIOLATED)
+_081925_/X                               10     11        (VIOLATED)
+_081963_/X                               10     11        (VIOLATED)
+_082081_/X                               10     11        (VIOLATED)
+_082122_/X                               10     11        (VIOLATED)
+_082128_/X                               10     11        (VIOLATED)
+_082246_/X                               10     11        (VIOLATED)
+_082252_/X                               10     11        (VIOLATED)
+_082316_/X                               10     11        (VIOLATED)
+_082619_/X                               10     11        (VIOLATED)
+_082890_/X                               10     11        (VIOLATED)
+_083732_/X                               10     11        (VIOLATED)
+_083735_/X                               10     11        (VIOLATED)
+_083739_/X                               10     11        (VIOLATED)
+_083774_/X                               10     11        (VIOLATED)
+_083781_/X                               10     11        (VIOLATED)
+_083786_/X                               10     11        (VIOLATED)
+_083804_/X                               10     11        (VIOLATED)
+_083811_/X                               10     11        (VIOLATED)
+_083814_/X                               10     11        (VIOLATED)
+_083819_/X                               10     11        (VIOLATED)
+_083833_/X                               10     11        (VIOLATED)
+_083836_/X                               10     11        (VIOLATED)
+_083844_/X                               10     11        (VIOLATED)
+_083849_/X                               10     11        (VIOLATED)
+_083851_/X                               10     11        (VIOLATED)
+_083853_/X                               10     11        (VIOLATED)
+_083854_/X                               10     11        (VIOLATED)
+_083858_/X                               10     11        (VIOLATED)
+_083876_/X                               10     11        (VIOLATED)
+_083896_/X                               10     11        (VIOLATED)
+_083904_/X                               10     11        (VIOLATED)
+_083964_/X                               10     11        (VIOLATED)
+_084344_/X                               10     11        (VIOLATED)
+_084541_/X                               10     11        (VIOLATED)
+_084542_/X                               10     11        (VIOLATED)
+_084548_/X                               10     11        (VIOLATED)
+_084550_/X                               10     11        (VIOLATED)
+_084555_/X                               10     11        (VIOLATED)
+_084556_/X                               10     11        (VIOLATED)
+_084560_/X                               10     11        (VIOLATED)
+_084572_/X                               10     11        (VIOLATED)
+_084579_/X                               10     11        (VIOLATED)
+_084580_/X                               10     11        (VIOLATED)
+_084586_/X                               10     11        (VIOLATED)
+_084609_/X                               10     11        (VIOLATED)
+_084620_/X                               10     11        (VIOLATED)
+_084625_/X                               10     11        (VIOLATED)
+_084630_/X                               10     11        (VIOLATED)
+_084635_/X                               10     11        (VIOLATED)
+_085390_/X                               10     11        (VIOLATED)
+_085417_/X                               10     11        (VIOLATED)
+_085419_/X                               10     11        (VIOLATED)
+_085428_/X                               10     11        (VIOLATED)
+_085430_/X                               10     11        (VIOLATED)
+_085460_/X                               10     11        (VIOLATED)
+_085560_/X                               10     11        (VIOLATED)
+_085928_/X                               10     11        (VIOLATED)
+_085946_/X                               10     11        (VIOLATED)
+_086247_/X                               10     11        (VIOLATED)
+_086348_/X                               10     11        (VIOLATED)
+_086553_/X                               10     11        (VIOLATED)
+_086594_/X                               10     11        (VIOLATED)
+_086666_/X                               10     11        (VIOLATED)
+_086697_/X                               10     11        (VIOLATED)
+_086756_/X                               10     11        (VIOLATED)
+_086765_/X                               10     11        (VIOLATED)
+_086772_/X                               10     11        (VIOLATED)
+_086774_/X                               10     11        (VIOLATED)
+_086777_/X                               10     11        (VIOLATED)
+_086803_/X                               10     11        (VIOLATED)
+_086807_/X                               10     11        (VIOLATED)
+_086906_/X                               10     11        (VIOLATED)
+_086997_/X                               10     11        (VIOLATED)
+_087002_/X                               10     11        (VIOLATED)
+_087010_/X                               10     11        (VIOLATED)
+_087012_/X                               10     11        (VIOLATED)
+_087022_/X                               10     11        (VIOLATED)
+_087030_/X                               10     11        (VIOLATED)
+_087056_/X                               10     11        (VIOLATED)
+_087059_/X                               10     11        (VIOLATED)
+_087223_/X                               10     11        (VIOLATED)
+_087229_/X                               10     11        (VIOLATED)
+_087231_/X                               10     11        (VIOLATED)
+_087240_/X                               10     11        (VIOLATED)
+_087250_/X                               10     11        (VIOLATED)
+_087370_/X                               10     11        (VIOLATED)
+_087412_/X                               10     11        (VIOLATED)
+_087413_/X                               10     11        (VIOLATED)
+_087474_/X                               10     11        (VIOLATED)
+_087602_/X                               10     11        (VIOLATED)
+_087613_/X                               10     11        (VIOLATED)
+_087679_/X                               10     11        (VIOLATED)
+_087715_/X                               10     11        (VIOLATED)
+_087748_/X                               10     11        (VIOLATED)
+_087837_/X                               10     11        (VIOLATED)
+_087861_/X                               10     11        (VIOLATED)
+_087947_/X                               10     11        (VIOLATED)
+_087984_/X                               10     11        (VIOLATED)
+_088045_/X                               10     11        (VIOLATED)
+_088118_/X                               10     11        (VIOLATED)
+_089834_/X                               10     11        (VIOLATED)
+_090630_/X                               10     11        (VIOLATED)
+_090631_/X                               10     11        (VIOLATED)
+_091129_/X                               10     11        (VIOLATED)
+_091400_/X                               10     11        (VIOLATED)
+_091465_/X                               10     11        (VIOLATED)
+_092974_/X                               10     11        (VIOLATED)
+_093122_/X                               10     11        (VIOLATED)
+_093473_/X                               10     11        (VIOLATED)
+_095340_/X                               10     11        (VIOLATED)
+_095885_/X                               10     11        (VIOLATED)
+_096971_/X                               10     11        (VIOLATED)
+_097036_/X                               10     11        (VIOLATED)
+_097284_/X                               10     11        (VIOLATED)
+_097603_/X                               10     11        (VIOLATED)
+_097638_/X                               10     11        (VIOLATED)
+_097724_/X                               10     11        (VIOLATED)
+_097872_/X                               10     11        (VIOLATED)
+_097880_/X                               10     11        (VIOLATED)
+_097933_/X                               10     11        (VIOLATED)
+_098620_/X                               10     11        (VIOLATED)
+_099303_/X                               10     11        (VIOLATED)
+_099345_/X                               10     11        (VIOLATED)
+_099429_/X                               10     11        (VIOLATED)
+_099848_/X                               10     11        (VIOLATED)
+_100076_/X                               10     11        (VIOLATED)
+_100246_/X                               10     11        (VIOLATED)
+_100933_/X                               10     11        (VIOLATED)
+_101161_/X                               10     11        (VIOLATED)
+_102582_/X                               10     11        (VIOLATED)
+_102786_/X                               10     11        (VIOLATED)
+_102893_/X                               10     11        (VIOLATED)
+_103123_/X                               10     11        (VIOLATED)
+_103663_/X                               10     11        (VIOLATED)
+_104408_/X                               10     11        (VIOLATED)
+_105012_/X                               10     11        (VIOLATED)
+_105215_/X                               10     11        (VIOLATED)
+_105282_/X                               10     11        (VIOLATED)
+_105946_/X                               10     11        (VIOLATED)
+_106025_/X                               10     11        (VIOLATED)
+_106737_/X                               10     11        (VIOLATED)
+_106836_/X                               10     11        (VIOLATED)
+_106879_/X                               10     11        (VIOLATED)
+_107150_/X                               10     11        (VIOLATED)
+_107395_/X                               10     11        (VIOLATED)
+_107645_/Y                               10     11        (VIOLATED)
+_108190_/X                               10     11        (VIOLATED)
+_109271_/X                               10     11        (VIOLATED)
+_109314_/X                               10     11        (VIOLATED)
+_109940_/X                               10     11        (VIOLATED)
+_110557_/X                               10     11        (VIOLATED)
+_119584_/Q                               10     11        (VIOLATED)
+_119594_/Q                               10     11        (VIOLATED)
+fanout1015/X                             10     11        (VIOLATED)
+input19/X                                10     11        (VIOLATED)
+input20/X                                10     11        (VIOLATED)
+input26/X                                10     11        (VIOLATED)
+
+
+===========================================================================
+max slew violation count 0
+max fanout violation count 977
+max cap violation count 0
+============================================================================
+check_slew_end
+tns_report
+
+===========================================================================
+ report_tns
+============================================================================
+tns 0.00
+tns_report_end
+wns_report
+
+===========================================================================
+ report_wns
+============================================================================
+wns 0.00
+wns_report_end
+worst_slack
+
+===========================================================================
+ report_worst_slack -max (Setup)
+============================================================================
+worst slack 2.74
+
+===========================================================================
+ report_worst_slack -min (Hold)
+============================================================================
+worst slack 4.10
+worst_slack_end
+clock_skew
+
+===========================================================================
+ report_clock_skew
+============================================================================
+Clock clk
+No launch/capture paths found.
+
+clock_skew_end
+power_report
+
+===========================================================================
+ report_power
+============================================================================
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             8.15e-03   2.82e-03   1.55e-07   1.10e-02  74.3%
+Combinational          1.32e-03   2.47e-03   2.14e-07   3.79e-03  25.7%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  9.48e-03   5.29e-03   3.69e-07   1.48e-02 100.0%
+                          64.2%      35.8%       0.0%
+power_report_end
+area_report
+
+===========================================================================
+ report_design_area
+============================================================================
+Design area 934649 u^2 55% utilization.
+area_report_end
+Setting global connections for newly added cells...
+Writing OpenROAD database to /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/tmp/routing/14-global.odb...
+Writing layout to /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/tmp/routing/14-global.def...
+Writing routing guides to /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/tmp/routing/14-global.guide...

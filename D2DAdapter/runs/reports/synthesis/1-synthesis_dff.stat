@@ -1,0 +1,25 @@
+
+16. Printing statistics.
+
+=== D2DAdapter ===
+
+   Number of wires:              52277
+   Number of wire bits:          70976
+   Number of public wires:         417
+   Number of public wire bits:   19078
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              70404
+     $_ANDNOT_                     713
+     $_AND_                         66
+     $_MUX_                      36230
+     $_NAND_                        79
+     $_NOR_                        124
+     $_NOT_                      13928
+     $_ORNOT_                      148
+     $_OR_                         639
+     $_XNOR_                        42
+     $_XOR_                        135
+     sky130_fd_sc_hd__dfxtp_2    18300
+

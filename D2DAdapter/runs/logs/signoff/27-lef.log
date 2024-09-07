@@ -1,0 +1,1033 @@
+
+Magic 8.3 revision 331 - Compiled on Sat Oct 22 18:40:56 UTC 2022.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Sourcing design .magicrc for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Input style sky130(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading sky130A Device Generator Menu ...
+Using technology "sky130A", version 1.0.356-0-g3af1337
+Reading LEF data from file /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef.
+This action cannot be undone.
+LEF read, Line 78 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 79 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 112 (Message): Unknown keyword "MINENCLOSEDAREA" in LEF file; ignoring.
+LEF read, Line 114 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 115 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 121 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 122 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 123 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 156 (Message): Unknown keyword "MINENCLOSEDAREA" in LEF file; ignoring.
+LEF read, Line 164 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 165 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 167 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 168 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 169 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 206 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 207 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 209 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 210 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 211 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 248 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 249 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 251 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 252 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 253 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 290 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 291 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read: Processed 797 lines.
+D2DAdapter: 10000 rects
+D2DAdapter: 20000 rects
+D2DAdapter: 30000 rects
+D2DAdapter: 40000 rects
+D2DAdapter: 50000 rects
+D2DAdapter: 60000 rects
+D2DAdapter: 70000 rects
+D2DAdapter: 80000 rects
+D2DAdapter: 90000 rects
+D2DAdapter: 100000 rects
+D2DAdapter: 110000 rects
+D2DAdapter: 120000 rects
+D2DAdapter: 130000 rects
+D2DAdapter: 140000 rects
+D2DAdapter: 150000 rects
+D2DAdapter: 160000 rects
+D2DAdapter: 170000 rects
+D2DAdapter: 180000 rects
+D2DAdapter: 190000 rects
+D2DAdapter: 200000 rects
+D2DAdapter: 210000 rects
+D2DAdapter: 220000 rects
+D2DAdapter: 230000 rects
+D2DAdapter: 240000 rects
+D2DAdapter: 250000 rects
+D2DAdapter: 260000 rects
+D2DAdapter: 270000 rects
+D2DAdapter: 280000 rects
+D2DAdapter: 290000 rects
+D2DAdapter: 300000 rects
+D2DAdapter: 310000 rects
+D2DAdapter: 320000 rects
+D2DAdapter: 330000 rects
+D2DAdapter: 340000 rects
+D2DAdapter: 350000 rects
+D2DAdapter: 360000 rects
+D2DAdapter: 370000 rects
+D2DAdapter: 380000 rects
+D2DAdapter: 390000 rects
+D2DAdapter: 400000 rects
+D2DAdapter: 410000 rects
+D2DAdapter: 420000 rects
+D2DAdapter: 430000 rects
+D2DAdapter: 440000 rects
+D2DAdapter: 450000 rects
+D2DAdapter: 460000 rects
+D2DAdapter: 470000 rects
+D2DAdapter: 480000 rects
+D2DAdapter: 490000 rects
+D2DAdapter: 500000 rects
+D2DAdapter: 510000 rects
+D2DAdapter: 520000 rects
+D2DAdapter: 530000 rects
+D2DAdapter: 540000 rects
+D2DAdapter: 550000 rects
+D2DAdapter: 560000 rects
+D2DAdapter: 570000 rects
+D2DAdapter: 580000 rects
+D2DAdapter: 590000 rects
+D2DAdapter: 600000 rects
+D2DAdapter: 610000 rects
+D2DAdapter: 620000 rects
+D2DAdapter: 630000 rects
+D2DAdapter: 640000 rects
+D2DAdapter: 650000 rects
+D2DAdapter: 660000 rects
+D2DAdapter: 670000 rects
+D2DAdapter: 680000 rects
+D2DAdapter: 690000 rects
+D2DAdapter: 700000 rects
+D2DAdapter: 710000 rects
+D2DAdapter: 720000 rects
+D2DAdapter: 730000 rects
+D2DAdapter: 740000 rects
+D2DAdapter: 750000 rects
+D2DAdapter: 760000 rects
+D2DAdapter: 770000 rects
+D2DAdapter: 780000 rects
+D2DAdapter: 790000 rects
+D2DAdapter: 800000 rects
+D2DAdapter: 810000 rects
+D2DAdapter: 820000 rects
+D2DAdapter: 830000 rects
+D2DAdapter: 840000 rects
+D2DAdapter: 850000 rects
+D2DAdapter: 860000 rects
+D2DAdapter: 870000 rects
+D2DAdapter: 880000 rects
+D2DAdapter: 890000 rects
+D2DAdapter: 900000 rects
+D2DAdapter: 910000 rects
+D2DAdapter: 920000 rects
+D2DAdapter: 930000 rects
+D2DAdapter: 940000 rects
+D2DAdapter: 950000 rects
+D2DAdapter: 960000 rects
+D2DAdapter: 970000 rects
+D2DAdapter: 980000 rects
+D2DAdapter: 990000 rects
+D2DAdapter: 1000000 rects
+D2DAdapter: 1010000 rects
+D2DAdapter: 1020000 rects
+D2DAdapter: 1030000 rects
+D2DAdapter: 1040000 rects
+D2DAdapter: 1050000 rects
+D2DAdapter: 1060000 rects
+D2DAdapter: 1070000 rects
+D2DAdapter: 1080000 rects
+D2DAdapter: 1090000 rects
+D2DAdapter: 1100000 rects
+D2DAdapter: 1110000 rects
+D2DAdapter: 1120000 rects
+D2DAdapter: 1130000 rects
+D2DAdapter: 1140000 rects
+D2DAdapter: 1150000 rects
+D2DAdapter: 1160000 rects
+D2DAdapter: 1170000 rects
+D2DAdapter: 1180000 rects
+D2DAdapter: 1190000 rects
+D2DAdapter: 1200000 rects
+D2DAdapter: 1210000 rects
+D2DAdapter: 1220000 rects
+D2DAdapter: 1230000 rects
+D2DAdapter: 1240000 rects
+D2DAdapter: 1250000 rects
+D2DAdapter: 1260000 rects
+D2DAdapter: 1270000 rects
+D2DAdapter: 1280000 rects
+D2DAdapter: 1290000 rects
+D2DAdapter: 1300000 rects
+D2DAdapter: 1310000 rects
+D2DAdapter: 1320000 rects
+D2DAdapter: 1330000 rects
+D2DAdapter: 1340000 rects
+D2DAdapter: 1350000 rects
+D2DAdapter: 1360000 rects
+D2DAdapter: 1370000 rects
+D2DAdapter: 1380000 rects
+D2DAdapter: 1390000 rects
+D2DAdapter: 1400000 rects
+D2DAdapter: 1410000 rects
+D2DAdapter: 1420000 rects
+D2DAdapter: 1430000 rects
+D2DAdapter: 1440000 rects
+D2DAdapter: 1450000 rects
+D2DAdapter: 1460000 rects
+D2DAdapter: 1470000 rects
+D2DAdapter: 1480000 rects
+D2DAdapter: 1490000 rects
+D2DAdapter: 1500000 rects
+D2DAdapter: 1510000 rects
+D2DAdapter: 1520000 rects
+D2DAdapter: 1530000 rects
+D2DAdapter: 1540000 rects
+D2DAdapter: 1550000 rects
+D2DAdapter: 1560000 rects
+D2DAdapter: 1570000 rects
+D2DAdapter: 1580000 rects
+D2DAdapter: 1590000 rects
+D2DAdapter: 1600000 rects
+D2DAdapter: 1610000 rects
+D2DAdapter: 1620000 rects
+D2DAdapter: 1630000 rects
+D2DAdapter: 1640000 rects
+D2DAdapter: 1650000 rects
+D2DAdapter: 1660000 rects
+D2DAdapter: 1670000 rects
+D2DAdapter: 1680000 rects
+D2DAdapter: 1690000 rects
+D2DAdapter: 1700000 rects
+D2DAdapter: 1710000 rects
+D2DAdapter: 1720000 rects
+D2DAdapter: 1730000 rects
+D2DAdapter: 1740000 rects
+D2DAdapter: 1750000 rects
+D2DAdapter: 1760000 rects
+D2DAdapter: 1770000 rects
+D2DAdapter: 1780000 rects
+D2DAdapter: 1790000 rects
+D2DAdapter: 1800000 rects
+D2DAdapter: 1810000 rects
+D2DAdapter: 1820000 rects
+D2DAdapter: 1830000 rects
+D2DAdapter: 1840000 rects
+D2DAdapter: 1850000 rects
+D2DAdapter: 1860000 rects
+D2DAdapter: 1870000 rects
+D2DAdapter: 1880000 rects
+D2DAdapter: 1890000 rects
+D2DAdapter: 1900000 rects
+D2DAdapter: 1910000 rects
+D2DAdapter: 1920000 rects
+D2DAdapter: 1930000 rects
+D2DAdapter: 1940000 rects
+D2DAdapter: 1950000 rects
+D2DAdapter: 1960000 rects
+D2DAdapter: 1970000 rects
+D2DAdapter: 1980000 rects
+D2DAdapter: 1990000 rects
+D2DAdapter: 2000000 rects
+D2DAdapter: 2010000 rects
+D2DAdapter: 2020000 rects
+D2DAdapter: 2030000 rects
+D2DAdapter: 2040000 rects
+D2DAdapter: 2050000 rects
+D2DAdapter: 2060000 rects
+D2DAdapter: 2070000 rects
+D2DAdapter: 2080000 rects
+D2DAdapter: 2090000 rects
+D2DAdapter: 2100000 rects
+D2DAdapter: 2110000 rects
+D2DAdapter: 2120000 rects
+D2DAdapter: 2130000 rects
+D2DAdapter: 2140000 rects
+D2DAdapter: 2150000 rects
+D2DAdapter: 2160000 rects
+D2DAdapter: 2170000 rects
+D2DAdapter: 2180000 rects
+D2DAdapter: 2190000 rects
+D2DAdapter: 2200000 rects
+D2DAdapter: 2210000 rects
+D2DAdapter: 2220000 rects
+D2DAdapter: 2230000 rects
+D2DAdapter: 2240000 rects
+D2DAdapter: 2250000 rects
+D2DAdapter: 2260000 rects
+D2DAdapter: 2270000 rects
+D2DAdapter: 2280000 rects
+D2DAdapter: 2290000 rects
+D2DAdapter: 2300000 rects
+D2DAdapter: 2310000 rects
+D2DAdapter: 2320000 rects
+D2DAdapter: 2330000 rects
+D2DAdapter: 2340000 rects
+D2DAdapter: 2350000 rects
+D2DAdapter: 2360000 rects
+D2DAdapter: 2370000 rects
+D2DAdapter: 2380000 rects
+D2DAdapter: 2390000 rects
+D2DAdapter: 2400000 rects
+D2DAdapter: 2410000 rects
+D2DAdapter: 2420000 rects
+D2DAdapter: 2430000 rects
+D2DAdapter: 2440000 rects
+D2DAdapter: 2450000 rects
+D2DAdapter: 2460000 rects
+D2DAdapter: 2470000 rects
+D2DAdapter: 2480000 rects
+D2DAdapter: 2490000 rects
+D2DAdapter: 2500000 rects
+D2DAdapter: 2510000 rects
+D2DAdapter: 2520000 rects
+D2DAdapter: 2530000 rects
+D2DAdapter: 2540000 rects
+D2DAdapter: 2550000 rects
+D2DAdapter: 2560000 rects
+D2DAdapter: 2570000 rects
+D2DAdapter: 2580000 rects
+D2DAdapter: 2590000 rects
+D2DAdapter: 2600000 rects
+D2DAdapter: 2610000 rects
+D2DAdapter: 2620000 rects
+D2DAdapter: 2630000 rects
+D2DAdapter: 2640000 rects
+D2DAdapter: 2650000 rects
+D2DAdapter: 2660000 rects
+D2DAdapter: 2670000 rects
+D2DAdapter: 2680000 rects
+D2DAdapter: 2690000 rects
+D2DAdapter: 2700000 rects
+D2DAdapter: 2710000 rects
+D2DAdapter: 2720000 rects
+D2DAdapter: 2730000 rects
+D2DAdapter: 2740000 rects
+D2DAdapter: 2750000 rects
+D2DAdapter: 2760000 rects
+D2DAdapter: 2770000 rects
+D2DAdapter: 2780000 rects
+D2DAdapter: 2790000 rects
+D2DAdapter: 2800000 rects
+D2DAdapter: 2810000 rects
+D2DAdapter: 2820000 rects
+D2DAdapter: 2830000 rects
+D2DAdapter: 2840000 rects
+D2DAdapter: 2850000 rects
+D2DAdapter: 2860000 rects
+D2DAdapter: 2870000 rects
+D2DAdapter: 2880000 rects
+D2DAdapter: 2890000 rects
+D2DAdapter: 2900000 rects
+D2DAdapter: 2910000 rects
+D2DAdapter: 2920000 rects
+D2DAdapter: 2930000 rects
+D2DAdapter: 2940000 rects
+D2DAdapter: 2950000 rects
+D2DAdapter: 2960000 rects
+D2DAdapter: 2970000 rects
+D2DAdapter: 2980000 rects
+D2DAdapter: 2990000 rects
+D2DAdapter: 3000000 rects
+D2DAdapter: 3010000 rects
+D2DAdapter: 3020000 rects
+D2DAdapter: 3030000 rects
+D2DAdapter: 3040000 rects
+D2DAdapter: 3050000 rects
+D2DAdapter: 3060000 rects
+D2DAdapter: 3070000 rects
+D2DAdapter: 3080000 rects
+D2DAdapter: 3090000 rects
+D2DAdapter: 3100000 rects
+D2DAdapter: 3110000 rects
+D2DAdapter: 3120000 rects
+D2DAdapter: 3130000 rects
+D2DAdapter: 3140000 rects
+D2DAdapter: 3150000 rects
+D2DAdapter: 3160000 rects
+D2DAdapter: 3170000 rects
+D2DAdapter: 3180000 rects
+D2DAdapter: 3190000 rects
+D2DAdapter: 3200000 rects
+D2DAdapter: 3210000 rects
+D2DAdapter: 3220000 rects
+D2DAdapter: 3230000 rects
+D2DAdapter: 3240000 rects
+D2DAdapter: 3250000 rects
+D2DAdapter: 3260000 rects
+D2DAdapter: 3270000 rects
+D2DAdapter: 3280000 rects
+D2DAdapter: 3290000 rects
+D2DAdapter: 3300000 rects
+D2DAdapter: 3310000 rects
+D2DAdapter: 3320000 rects
+D2DAdapter: 3330000 rects
+D2DAdapter: 3340000 rects
+D2DAdapter: 3350000 rects
+D2DAdapter: 3360000 rects
+D2DAdapter: 3370000 rects
+D2DAdapter: 3380000 rects
+D2DAdapter: 3390000 rects
+D2DAdapter: 3400000 rects
+D2DAdapter: 3410000 rects
+D2DAdapter: 3420000 rects
+D2DAdapter: 3430000 rects
+D2DAdapter: 3440000 rects
+D2DAdapter: 3450000 rects
+D2DAdapter: 3460000 rects
+D2DAdapter: 3470000 rects
+D2DAdapter: 3480000 rects
+D2DAdapter: 3490000 rects
+D2DAdapter: 3500000 rects
+D2DAdapter: 3510000 rects
+D2DAdapter: 3520000 rects
+D2DAdapter: 3530000 rects
+D2DAdapter: 3540000 rects
+D2DAdapter: 3550000 rects
+D2DAdapter: 3560000 rects
+D2DAdapter: 3570000 rects
+D2DAdapter: 3580000 rects
+D2DAdapter: 3590000 rects
+D2DAdapter: 3600000 rects
+D2DAdapter: 3610000 rects
+D2DAdapter: 3620000 rects
+D2DAdapter: 3630000 rects
+D2DAdapter: 3640000 rects
+D2DAdapter: 3650000 rects
+D2DAdapter: 3660000 rects
+D2DAdapter: 3670000 rects
+D2DAdapter: 3680000 rects
+D2DAdapter: 3690000 rects
+D2DAdapter: 3700000 rects
+D2DAdapter: 3710000 rects
+D2DAdapter: 3720000 rects
+D2DAdapter: 3730000 rects
+D2DAdapter: 3740000 rects
+D2DAdapter: 3750000 rects
+D2DAdapter: 3760000 rects
+D2DAdapter: 3770000 rects
+D2DAdapter: 3780000 rects
+D2DAdapter: 3790000 rects
+D2DAdapter: 3800000 rects
+D2DAdapter: 3810000 rects
+D2DAdapter: 3820000 rects
+D2DAdapter: 3830000 rects
+D2DAdapter: 3840000 rects
+D2DAdapter: 3850000 rects
+D2DAdapter: 3860000 rects
+D2DAdapter: 3870000 rects
+D2DAdapter: 3880000 rects
+D2DAdapter: 3890000 rects
+D2DAdapter: 3900000 rects
+D2DAdapter: 3910000 rects
+D2DAdapter: 3920000 rects
+D2DAdapter: 3930000 rects
+D2DAdapter: 3940000 rects
+D2DAdapter: 3950000 rects
+D2DAdapter: 3960000 rects
+D2DAdapter: 3970000 rects
+D2DAdapter: 3980000 rects
+D2DAdapter: 3990000 rects
+D2DAdapter: 4000000 rects
+D2DAdapter: 4010000 rects
+D2DAdapter: 4020000 rects
+D2DAdapter: 4030000 rects
+D2DAdapter: 4040000 rects
+D2DAdapter: 4050000 rects
+D2DAdapter: 4060000 rects
+D2DAdapter: 4070000 rects
+D2DAdapter: 4080000 rects
+D2DAdapter: 4090000 rects
+D2DAdapter: 4100000 rects
+D2DAdapter: 4110000 rects
+D2DAdapter: 4120000 rects
+D2DAdapter: 4130000 rects
+D2DAdapter: 4140000 rects
+D2DAdapter: 4150000 rects
+D2DAdapter: 4160000 rects
+D2DAdapter: 4170000 rects
+D2DAdapter: 4180000 rects
+D2DAdapter: 4190000 rects
+D2DAdapter: 4200000 rects
+D2DAdapter: 4210000 rects
+D2DAdapter: 4220000 rects
+D2DAdapter: 4230000 rects
+D2DAdapter: 4240000 rects
+D2DAdapter: 4250000 rects
+D2DAdapter: 4260000 rects
+D2DAdapter: 4270000 rects
+D2DAdapter: 4280000 rects
+D2DAdapter: 4290000 rects
+D2DAdapter: 4300000 rects
+D2DAdapter: 4310000 rects
+D2DAdapter: 4320000 rects
+D2DAdapter: 4330000 rects
+D2DAdapter: 4340000 rects
+D2DAdapter: 4350000 rects
+D2DAdapter: 4360000 rects
+D2DAdapter: 4370000 rects
+D2DAdapter: 4380000 rects
+D2DAdapter: 4390000 rects
+D2DAdapter: 4400000 rects
+D2DAdapter: 4410000 rects
+D2DAdapter: 4420000 rects
+D2DAdapter: 4430000 rects
+D2DAdapter: 4440000 rects
+D2DAdapter: 4450000 rects
+D2DAdapter: 4460000 rects
+D2DAdapter: 4470000 rects
+D2DAdapter: 4480000 rects
+D2DAdapter: 4490000 rects
+D2DAdapter: 4500000 rects
+D2DAdapter: 4510000 rects
+D2DAdapter: 4520000 rects
+D2DAdapter: 4530000 rects
+D2DAdapter: 4540000 rects
+D2DAdapter: 4550000 rects
+D2DAdapter: 4560000 rects
+D2DAdapter: 4570000 rects
+D2DAdapter: 4580000 rects
+D2DAdapter: 4590000 rects
+D2DAdapter: 4600000 rects
+D2DAdapter: 4610000 rects
+D2DAdapter: 4620000 rects
+D2DAdapter: 4630000 rects
+D2DAdapter: 4640000 rects
+D2DAdapter: 4650000 rects
+D2DAdapter: 4660000 rects
+D2DAdapter: 4670000 rects
+D2DAdapter: 4680000 rects
+D2DAdapter: 4690000 rects
+D2DAdapter: 4700000 rects
+D2DAdapter: 4710000 rects
+D2DAdapter: 4720000 rects
+D2DAdapter: 4730000 rects
+D2DAdapter: 4740000 rects
+D2DAdapter: 4750000 rects
+D2DAdapter: 4760000 rects
+D2DAdapter: 4770000 rects
+[INFO]: Writing abstract LEF
+Generating LEF output /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/D2DAdapter.lef for cell D2DAdapter:
+Diagnostic:  Write LEF header for cell D2DAdapter
+Diagnostic:  Writing LEF output for cell D2DAdapter
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__buf_2" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__buf_2.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__buf_2.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__buf_12" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__buf_12.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__buf_12.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__buf_6" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__buf_6.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__buf_6.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__clkbuf_16" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__clkbuf_16.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__clkbuf_16.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__buf_4" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__buf_4.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__buf_4.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__clkbuf_4" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__clkbuf_4.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__clkbuf_4.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__clkbuf_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__clkbuf_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__clkbuf_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__buf_8" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__buf_8.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__buf_8.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__clkbuf_2" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__clkbuf_2.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__clkbuf_2.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__dlymetal6s2s_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__dlymetal6s2s_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__dlymetal6s2s_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__clkbuf_8" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__clkbuf_8.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__clkbuf_8.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__dfxtp_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__dfxtp_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__dfxtp_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__dfxtp_4" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__dfxtp_4.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__dfxtp_4.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__dfxtp_2" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__dfxtp_2.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__dfxtp_2.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__mux2_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__mux2_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__mux2_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__and2_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__and2_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__and2_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__or2_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__or2_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__or2_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__o21a_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__o21a_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__o21a_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__nor2_8" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__nor2_8.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__nor2_8.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__and2b_4" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__and2b_4.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__and2b_4.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__o211a_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__o211a_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__o211a_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__o211ai_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__o211ai_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__o211ai_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__a21o_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__a21o_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__a21o_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__nor2_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__nor2_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__nor2_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__a22o_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__a22o_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__a22o_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__inv_2" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__inv_2.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__inv_2.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__and2_4" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__and2_4.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__and2_4.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__o2111a_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__o2111a_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__o2111a_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__o21a_4" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__o21a_4.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__o21a_4.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__and3_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__and3_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__and3_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__or3b_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__or3b_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__or3b_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__o22a_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__o22a_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__o22a_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__a32o_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__a32o_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__a32o_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__a311o_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__a311o_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__a311o_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__a2bb2o_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__a2bb2o_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__a2bb2o_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__or2b_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__or2b_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__or2b_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__a31o_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__a31o_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__a31o_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__o21ai_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__o21ai_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__o21ai_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__a21oi_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__a21oi_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__a21oi_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__nand2_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__nand2_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__nand2_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__o41a_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__o41a_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__o41a_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__a211o_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__a211o_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__a211o_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__nand3_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__nand3_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__nand3_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__o21ai_4" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__o21ai_4.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__o21ai_4.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__o21ai_2" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__o21ai_2.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__o21ai_2.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__nor3_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__nor3_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__nor3_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__and2b_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__and2b_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__and2b_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__a21boi_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__a21boi_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__a21boi_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__and4bb_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__and4bb_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__and4bb_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__nor4_2" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__nor4_2.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__nor4_2.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__a41o_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__a41o_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__a41o_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__o31a_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__o31a_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__o31a_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__nand4_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__nand4_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__nand4_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__a211oi_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__a211oi_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__a211oi_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__o32a_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__o32a_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__o32a_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__or3_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__or3_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__or3_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__or4_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__or4_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__or4_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__and3_2" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__and3_2.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__and3_2.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__nand2_2" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__nand2_2.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__nand2_2.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__or2_2" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__or2_2.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__or2_2.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__and3b_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__and3b_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__and3b_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__or3b_4" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__or3b_4.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__or3b_4.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__or3_4" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__or3_4.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__or3_4.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__or3b_2" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__or3b_2.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__or3b_2.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__nand3b_2" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__nand3b_2.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__nand3b_2.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__a32oi_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__a32oi_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__a32oi_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__xnor2_2" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__xnor2_2.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__xnor2_2.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__xnor2_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__xnor2_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__xnor2_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__xor2_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__xor2_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__xor2_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__xnor2_4" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__xnor2_4.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__xnor2_4.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__xor2_4" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__xor2_4.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__xor2_4.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__xor2_2" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__xor2_2.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__xor2_2.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__nor2_4" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__nor2_4.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__nor2_4.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__a22oi_4" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__a22oi_4.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__a22oi_4.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__mux4_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__mux4_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__mux4_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__a221o_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__a221o_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__a221o_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__mux4_2" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__mux4_2.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__mux4_2.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__a32o_2" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__a32o_2.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__a32o_2.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__o21a_2" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__o21a_2.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__o21a_2.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__mux2_2" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__mux2_2.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__mux2_2.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__o2bb2a_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__o2bb2a_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__o2bb2a_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__a21oi_4" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__a21oi_4.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__a21oi_4.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__o211ai_2" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__o211ai_2.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__o211ai_2.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__a221o_2" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__a221o_2.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__a221o_2.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__a22oi_2" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__a22oi_2.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__a22oi_2.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__a22oi_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__a22oi_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__a22oi_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__a31o_2" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__a31o_2.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__a31o_2.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__a21oi_2" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__a21oi_2.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__a21oi_2.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__o221a_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__o221a_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__o221a_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__a221o_4" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__a221o_4.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__a221o_4.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__and3b_2" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__and3b_2.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__and3b_2.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__nor2_2" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__nor2_2.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__nor2_2.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__o21ba_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__o21ba_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__o21ba_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__o311ai_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__o311ai_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__o311ai_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__nand3b_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__nand3b_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__nand3b_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__a22o_2" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__a22o_2.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__a22o_2.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__a22o_4" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__a22o_4.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__a22o_4.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__o311a_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__o311a_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__o311a_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__nand2_4" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__nand2_4.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__nand2_4.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__mux2_4" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__mux2_4.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__mux2_4.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__a21bo_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__a21bo_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__a21bo_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__or4_2" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__or4_2.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__or4_2.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__a31oi_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__a31oi_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__a31oi_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__nor3_4" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__nor3_4.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__nor3_4.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__nand3_4" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__nand3_4.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__nand3_4.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__nand2_8" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__nand2_8.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__nand2_8.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__nor3_2" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__nor3_2.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__nor3_2.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__and3_4" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__and3_4.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__and3_4.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__a311oi_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__a311oi_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__a311oi_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__and4_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__and4_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__and4_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__o22ai_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__o22ai_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__o22ai_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__o41a_2" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__o41a_2.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__o41a_2.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__nand4_4" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__nand4_4.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__nand4_4.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__and4b_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__and4b_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__and4b_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__o21ba_4" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__o21ba_4.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__o21ba_4.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__nor3b_2" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__nor3b_2.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__nor3b_2.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__a31o_4" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__a31o_4.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__a31o_4.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__and2_2" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__and2_2.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__and2_2.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__a311oi_4" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__a311oi_4.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__a311oi_4.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__or2b_2" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__or2b_2.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__or2b_2.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__o21bai_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__o21bai_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__o21bai_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__nor2b_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__nor2b_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__nor2b_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__a2111oi_4" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__a2111oi_4.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__a2111oi_4.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__a211o_2" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__a211o_2.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__a211o_2.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__clkinv_2" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__clkinv_2.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__clkinv_2.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__or4b_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__or4b_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__or4b_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__or3_2" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__or3_2.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__or3_2.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__a2111o_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__a2111o_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__a2111o_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__o32ai_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__o32ai_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__o32ai_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__or4b_2" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__or4b_2.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__or4b_2.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__o311a_2" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__o311a_2.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__o311a_2.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__o311a_4" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__o311a_4.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__o311a_4.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__nand4b_4" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__nand4b_4.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__nand4b_4.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__a311o_2" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__a311o_2.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__a311o_2.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__o221ai_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__o221ai_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__o221ai_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__o221ai_4" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__o221ai_4.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__o221ai_4.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__o221ai_2" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__o221ai_2.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__o221ai_2.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__o2bb2a_2" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__o2bb2a_2.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__o2bb2a_2.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__and4bb_2" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__and4bb_2.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__and4bb_2.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__nor4_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__nor4_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__nor4_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__or2_4" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__or2_4.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__or2_4.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__a211oi_4" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__a211oi_4.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__a211oi_4.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__a21o_2" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__a21o_2.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__a21o_2.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__o41ai_4" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__o41ai_4.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__o41ai_4.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__nand4b_2" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__nand4b_2.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__nand4b_2.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__o2111ai_4" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__o2111ai_4.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__o2111ai_4.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__o2bb2a_4" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__o2bb2a_4.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__o2bb2a_4.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__or4_4" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__or4_4.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__or4_4.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__inv_6" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__inv_6.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__inv_6.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__inv_4" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__inv_4.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__inv_4.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__clkinv_4" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__clkinv_4.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__clkinv_4.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__nor4_4" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__nor4_4.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__nor4_4.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__a2bb2o_2" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__a2bb2o_2.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__a2bb2o_2.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__a2111o_2" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__a2111o_2.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__a2111o_2.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__or4bb_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__or4bb_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__or4bb_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__a31oi_4" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__a31oi_4.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__a31oi_4.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__or4bb_4" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__or4bb_4.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__or4bb_4.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__o221a_4" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__o221a_4.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__o221a_4.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__mux2_8" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__mux2_8.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__mux2_8.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__tapvpwrvgnd_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__tapvpwrvgnd_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__tapvpwrvgnd_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__decap_3" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__decap_3.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__decap_3.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__fill_2" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__fill_2.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__fill_2.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__fill_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__fill_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__fill_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__decap_4" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__decap_4.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__decap_4.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__decap_6" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__decap_6.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__decap_6.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__decap_8" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__decap_8.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__decap_8.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_ef_sc_hd__decap_12" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_ef_sc_hd__decap_12.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_ef_sc_hd__decap_12.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__conb_1" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__conb_1.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__conb_1.mag.
+The discovered version will be used.
+Warning:  Parent cell lists instance of "sky130_fd_sc_hd__diode_2" at bad file path /openlane/designs/D2DAdapter/runs/RUN_2024.07.10_02.23.41/results/signoff/sky130_fd_sc_hd__diode_2.mag.
+The cell exists in the search paths at /home/zerotoasic/asic_tools/pdk/sky130A/libs.ref/sky130_fd_sc_hd/maglef/sky130_fd_sc_hd__diode_2.mag.
+The discovered version will be used.
+Diagnostic:  Scale value is 0.005000
+[INFO]: LEF Write Complete

@@ -1,0 +1,9 @@
+
+{
+    "DESIGN_NAME": "sha2_top",
+    "VERILOG_FILES": "dir::source/*.v",
+    "CLOCK_PORT": "clk",
+    "CLOCK_PERIOD": 10.0,
+    "DESIGN_IS_CORE": true
+   
+}

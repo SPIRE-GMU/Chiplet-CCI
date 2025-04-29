@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1743434264" />
+    <testcase name="test_d2d_adapter" classname="test_D2DAdapter" file="/home/hwani/Desktop/tiny-tapeout-D2DAdapter/test/test_D2DAdapter.py" lineno="6" time="0.038071393966674805" sim_time_ns="2990000.001" ratio_time="78536656.77745473" />
+  </testsuite>
+</testsuites>

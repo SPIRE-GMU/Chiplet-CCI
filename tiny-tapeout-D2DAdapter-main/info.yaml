@@ -1,0 +1,54 @@
+# Tiny Tapeout project information
+project:
+  title:        "D2D Adapter"      # Project title
+  author:       "Hoor Yasin Wani"      # Your name
+  discord:      "hoorifyyyy"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "A high-speed adapter design for data transfer in the D2D interface."      # One line description of what your project does
+  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     50000000       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "8x2"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_hoorifyyyy_D2DAdapter"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "D2DAdapter.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+   # Inputs
+  ui[0]: "clk"
+  ui[1]: "reset"
+  ui[2]: "io_fdi_lpData_valid"
+  ui[3]: "io_fdi_lpData_irdy"
+  ui[4]: "io_fdi_lpData_bits"
+  ui[5]: "io_fdi_lpRetimerCrd"
+  ui[6]: "io_fdi_lpCorruptCrc"
+  ui[7]: "io_fdi_lpDllp_valid"
+
+  # Outputs
+  uo[0]: "io_fdi_lpData_ready"
+  uo[1]: "io_fdi_plData_valid"
+  uo[2]: "io_fdi_plData_bits"
+  uo[3]: "io_fdi_plRetimerCrd"
+  uo[4]: "io_fdi_plDllp_valid"
+  uo[5]: "io_fdi_plDllp_bits"
+  uo[6]: "io_fdi_plDllpOfc"
+  uo[7]: "io_fdi_plStream_protoStack"
+
+  # Bidirectional pins
+  uio[0]: "io_fdi_lpStateReq"
+  uio[1]: "io_fdi_lpLinkError"
+  uio[2]: "io_fdi_plStateStatus"
+  uio[3]: "io_fdi_plInbandPres"
+  uio[4]: "io_fdi_plError"
+  uio[5]: "io_fdi_plCerror"
+  uio[6]: "io_fdi_plNfError"
+  uio[7]: "io_fdi_plTrainError"
+# Do not change!
+yaml_version: 6
